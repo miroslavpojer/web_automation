@@ -1,0 +1,1537 @@
+<html id="rootHtml" xmlns="http://www.w3.org/1999/xhtml" lang="cs-CZ"><head><!--mui-inject-first--><style data-jss="" data-meta="MuiScopedCssBaseline">
+.MuiScopedCssBaseline-root {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media print {
+  .MuiScopedCssBaseline-root {
+    background-color: #fff;
+  }
+}
+.MuiScopedCssBaseline-root *, .MuiScopedCssBaseline-root *::before, .MuiScopedCssBaseline-root *::after {
+  box-sizing: inherit;
+}
+.MuiScopedCssBaseline-root strong, .MuiScopedCssBaseline-root b {
+  font-weight: 700;
+}
+.MuiScopedCssBaseline-root form {
+  display: block;
+}
+.MuiScopedCssBaseline-root h2 {
+  padding: 0;
+}
+.MuiScopedCssBaseline-root .MuiRating-root {
+  color: #FFD538;
+}
+</style><style data-jss="" data-meta="MuiScopedCssBaseline">
+.MuiScopedCssBaseline-root {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media print {
+  .MuiScopedCssBaseline-root {
+    background-color: #fff;
+  }
+}
+.MuiScopedCssBaseline-root *, .MuiScopedCssBaseline-root *::before, .MuiScopedCssBaseline-root *::after {
+  box-sizing: inherit;
+}
+.MuiScopedCssBaseline-root strong, .MuiScopedCssBaseline-root b {
+  font-weight: 700;
+}
+.MuiScopedCssBaseline-root form {
+  display: block;
+}
+.MuiScopedCssBaseline-root h2 {
+  padding: 0;
+}
+.MuiScopedCssBaseline-root .MuiRating-root {
+  color: #FFD538;
+}
+</style><style data-jss="" data-meta="MuiScopedCssBaseline">
+.MuiScopedCssBaseline-root {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media print {
+  .MuiScopedCssBaseline-root {
+    background-color: #fff;
+  }
+}
+.MuiScopedCssBaseline-root *, .MuiScopedCssBaseline-root *::before, .MuiScopedCssBaseline-root *::after {
+  box-sizing: inherit;
+}
+.MuiScopedCssBaseline-root strong, .MuiScopedCssBaseline-root b {
+  font-weight: 700;
+}
+.MuiScopedCssBaseline-root form {
+  display: block;
+}
+.MuiScopedCssBaseline-root h2 {
+  padding: 0;
+}
+.MuiScopedCssBaseline-root .MuiRating-root {
+  color: #FFD538;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.niceScrollbars, .MuiDialogContent-root {
+  overflow: auto;
+}
+.MuiDialogContent-root, .niceScrollbars {
+  overflow: overlay;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-base-color: #e0e0e0;
+  scrollbar-face-color: #e0e0e0;
+  scrollbar-arrow-color: #ffffff;
+  scrollbar-track-color: #ffffff;
+  scrollbar-shadow-color: #e0e0e0;
+  scrollbar-3dlight-color: #ffffff;
+  scrollbar-highlight-color: #a4a4a4;
+  scrollbar-darkshadow-color: #ffffff;
+  scrollbar-dark-shadow-color: #e0e0e0;
+}
+.MuiDialogContent-root::-webkit-scrollbar-track, .niceScrollbars::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255, 0);
+}
+.MuiDialogContent-root::scrollbar-track, .niceScrollbars::scrollbar-track {
+  background-color: rgb(255, 255, 255, 0);
+}
+.MuiDialogContent-root::-webkit-scrollbar, .niceScrollbars::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.MuiDialogContent-root::-webkit-scrollbar-thumb, .niceScrollbars::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+.MuiDialogContent-root::-webkit-scrollbar-button:start, .niceScrollbars::-webkit-scrollbar-button:start {
+  height: 0;
+}
+.MuiDialogContent-root:before, .niceScrollbars:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  content: "";
+  display: none;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(255, 255, 255, 0) 100%);
+  pointer-events: none;
+}
+.MuiDialogContent-root:after, .niceScrollbars:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  content: "";
+  display: none;
+  position: absolute;
+  background: linear-gradient(180deg, rgb(255, 255, 255, 0) 0%, rgba(255,255,255,1) 100%);
+  pointer-events: none;
+}
+button {
+  font-family: Roboto, Arial, Verdana, sans-serif;
+}
+</style><style data-jss="" data-meta="loaderContext">
+#FE_LOADER {
+  top: 50%;
+  left: 50%;
+  z-index: 8003;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+#FE_LOADER > *:not(:first-child) {
+  display: none;
+}
+</style><style data-jss="" data-meta="loaderContext">
+#FE_LOADER {
+  top: 50%;
+  left: 50%;
+  z-index: 8003;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+#FE_LOADER > *:not(:first-child) {
+  display: none;
+}
+</style><style data-jss="" data-meta="loaderContext">
+#FE_LOADER {
+  top: 50%;
+  left: 50%;
+  z-index: 8003;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+#FE_LOADER > *:not(:first-child) {
+  display: none;
+}
+</style><style data-jss="" data-meta="notifications">
+.alz1 {
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 1400;
+  position: fixed;
+}
+.alz1 > * {
+  margin: 0 10px 10px 10px;
+}
+.alz2 {
+  opacity: 0;
+}
+.alz3 {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+.alz4 {
+  opacity: 1;
+}
+.alz5 {
+  opacity: 0;
+  transition: opacity 1000ms ease-out;
+}
+</style><style data-jss="" data-meta="notifications">
+.alz6 {
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 1400;
+  position: fixed;
+}
+.alz6 > * {
+  margin: 0 10px 10px 10px;
+}
+.alz7 {
+  opacity: 0;
+}
+.alz8 {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+.alz9 {
+  opacity: 1;
+}
+.alz10 {
+  opacity: 0;
+  transition: opacity 1000ms ease-out;
+}
+</style><style data-jss="" data-meta="notifications">
+.alz11 {
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 1400;
+  position: fixed;
+}
+.alz11 > * {
+  margin: 0 10px 10px 10px;
+}
+.alz12 {
+  opacity: 0;
+}
+.alz13 {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+.alz14 {
+  opacity: 1;
+}
+.alz15 {
+  opacity: 0;
+  transition: opacity 1000ms ease-out;
+}
+</style><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta id="contentLanguage" http-equiv="Content-Language" content="cs-CZ"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>
+	Nákupní košík | Alza.cz
+</title><meta name="author" content="Alza a.s."><meta id="metaDescription" name="description" content="...největší obchod s počítači a elektronikou!"><meta id="keywords" name="keywords" content="online internetový obchod prodej levné počítače elektronika Alza.cz Praha"><meta name="robots" content="index, follow">
+<link rel="shortcut icon" href="/favicon-alza.ico" type="image/x-icon">
+<meta name="msapplication-TileColor" content="#FFFFFF"><meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"><meta id="ogHeight" property="og:image:width" content="400"><meta id="ogWidth" property="og:image:height" content="300"><meta property="fb:app_id" content="181388238617107"><meta name="application-name" content="Alza.cz"><meta name="msapplication-TileImage" content="/images/alza-win8.png"> <meta name="apple-itunes-app" content="app-id=582287621"><link rel="manifest" href="/manifest.json"><link rel="publisher" href="https://plus.google.com/113255604026017568411/"><link rel="apple-touch-icon" href="Images/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet" as="font" onload="this.rel = 'stylesheet'" crossorigin=""><script src="https://connect.facebook.net/cs_CZ/all.js?hash=ef045a9685c684f8bfe8ae0ded6daf95" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" async="" src="//connect.facebook.net/cs_CZ/all.js"></script><script async="true" type="text/javascript" src="https://sslwidget.criteo.com/event?a=73362&amp;v=5.11.0&amp;p0=e%3Dce%26m%3D%255B%255D&amp;p1=e%3Dexd%26site_type%3Dd&amp;p2=e%3Dvb%26tms%3Dgtm-criteo-2.0.0%26p%3D%255Bi%25253DADC253z10i%252526pr%25253D15694.215%252526q%25253D1%255D&amp;p3=e%3Ddis&amp;adce=1&amp;bundle=6pB5Ml9tQVdTRWJOT0o5VGNLQ3k1UEkyOGkydEFScTdrJTJGcTNvcFdoY1pSalZpT0V1YWlacE02VUFZNnF4QWw0ODBjYUtWbTVxZzUlMkYlMkJGdnhGZlFPZlVhT0IwU1V4dkx3VUNaVzBKZEpWJTJCcElCQkttd3NDTHRmbzhOemhnUkpHNVRISTMlMkI0VzhKak54OFlTd1prM0s3Y1laT0d3JTNEJTNE&amp;tld=alza.cz&amp;fu=https%3A%2F%2Fwww.alza.cz%2FOrder1.htm&amp;pu=https%3A%2F%2Fwww.alza.cz%2FCrossSell.htm%3Fid%3D402246518%26pkitem%3D6778383%26count%3D1&amp;dtycbr=99160" data-owner="criteo-tag"></script><script type="text/javascript" async="" src="https://cdn.taboola.com/libtrc/unip/1460360/tfa.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=G-FGLGFS7LP0&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-FGLGFS7LP0&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-K8N2RL"></script><script type="text/javascript" async="" id="inspsync" src="https://cdn.inspectlet.com/inspectlet.js"></script><script async="" src="https://cdn.perfdrive.com/aperture/aperture.js"></script><script type="text/javascript" src="https://cdn.alza.cz/dist/b/loadCSSScript-0329ea6436.min.js"></script>
+<script type="text/javascript">
+
+	  window.lazySizesConfig = window.lazySizesConfig || {};
+	  lazySizesConfig.lazyClass = "lazy";
+	  window.lazySizesConfig.loadMode = 2;
+
+	  if (navigator.userAgent.indexOf('QtCarBrowser') !== -1)
+	  {
+		window.lazySizesConfig.loadMode = 3;
+	  }
+	</script>
+<!--[if lte IE 8]>
+	<script type="text/javascript">var _isIE8=true;</script>
+		<![endif]-->
+<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="https://cdn.alza.cz/dist/a/critical-full-093b6d4f91.min.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.alza.cz/dist/a/global-full-9d3b6c865e.min.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.alza.cz/dist/a/lowPriorityStyles-full-3783d882ae.min.css" as="style" onload="this.rel='stylesheet'" type="text/css">
+<link rel="stylesheet" href="https://cdn.alza.cz/dist/a/order1-full-2800db3a56.min.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.alza.cz/dist/a/orders-full-fd1f893f0f.min.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdn.alza.cz/Styles/print.css" media="print">
+<noscript>		
+		<link rel="stylesheet" href="https://cdn.alza.cz/dist/a/lowPriorityStyles-full-3783d882ae.min.css" type="text/css" />
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.alza.cz/Styles/print.css" media="print">
+
+	</noscript>
+<script type="text/javascript" src="https://cdn.alza.cz/dist/b/critical-0ea4affd06.min.js"></script>
+<script src="https://www.googleoptimize.com/optimize.js?id=GTM-KJRPCKV"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/b0804cef63955780fd36.js"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/612c2a2a0cced6b9b900.js"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/3bfd0a8261fd3d0b638f.js"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/4d49bf540f1085e16aad.js"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/b8dcf239cdd8cca9bf37.js"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/5e27bf32e82af2801b2b.js"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/ea21853de5c5c5164e90.js"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/ca3bd2b5e752d53812bc.js"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/5ba21dfb8b23132f0751.js"></script><script defer="" src="https://cdn.alza.cz/AlzaFEpublic/master/4.21.1/modules/e793040a5b9e4b3536b6.js"></script>
+<style>[style*="--aspect-ratio"]{position:relative;padding-bottom:calc(100%/(var(--aspect-ratio)));}[style*="--aspect-ratio"]>:first-child{position:absolute;top:0;left:0;height:100%;}</style>
+<style type="text/css">img[onload^="SVGInject("]{visibility:hidden;}</style><meta http-equiv="origin-trial" content="A+Mt6wQ7St5J869uXW1A/aL3lJaYJYff4gUwPvwSbTuZ7z/T1l4np41d/t4W9TdeS/EMua5fYfBoz4v4TT9tdAgAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5uZXQ6NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY2MTI5OTE5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><script src="https://cdn.luigisbox.com/alza-cz.js" data-luigisbox-tracker-id="208957-239813"></script><meta http-equiv="origin-trial" content="AxFuPIivbOVh9A1iWigZYBKLEsd09F0TKyZCh3vhaAKunGI5SMnDaV1g2yqrnkAKqythLyd+bS8ShWXWx388aQIAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY2MTI5OTE5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head><body class="default alza-cz alza" style="background-color: #bae2fc;"><alza-component-head>
+<meta name="og:site_name" content="Alza"><meta property="og:title" content="Nákupní košík | Alza.cz"><meta property="og:url" content="https://www.alza.cz/Order1.htm"><meta property="og:image" content="https://www.alza.cz/Styles/full/images/fb-logo.jpg">
+
+<span style="display:none;"></span>
+<form method="post" action="./Order1.htm" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="kSGA+nIgQr2uMy9Gok43ughawr7DgBlvohIxXg/zxFITK6a7C+WfH1R0hs5RfX4kdFrJAt9JYv/K9tcyzf8C24sbNxY=">
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var _canUseAlzaWallet = false;var _alzaCreditCode = 'SL700';var heartItems = new Array();heartItems[5320712] = [ '&nbsp;<a href="http://www.nfsenorina.cz/" target="_blank">více&nbsp;&raquo;</a>', 'https://cdn.alza.cz/Foto/f1/XX/XX222a.jpg', '/aloisovy-ponozky-nadacni-fond-senorina-d5320712.htm' ];var _isBasket = true;var _isServiceDelayedDelivery = false;var _serviceDelayedDeliveryText = 'Důkladná realizace vybrané služby si vyžádá čas. Může dojít ke zpoždění o 1 pracovní den, oproti podmínkám uváděným u vybraného typu dopravy.';window.__insp = window.__insp || [];
+            __insp.push(["wid", 978045370]);
+            (function() {
+            function __ldinsp(){var insp = document.createElement("script"); insp.type = "text/javascript"; insp.async = true; insp.id = "inspsync"; insp.src = ("https:" == document.location.protocol ? "https" : "http") + "://cdn.inspectlet.com/inspectlet.js"; var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(insp, x); }
+            if (window.attachEvent) window.attachEvent("onload", __ldinsp);
+            else window.addEventListener("load", __ldinsp, false);
+            })();__insp.push(["identify", "anonym"]);__insp.push(["tagSession", { velkaBila: "0", elektronickeZbozi: "1", fyzickeZbozi: "1", predobjednavka: "0", darek: "0", platba: "-", doprava: "-", typRegistrace: "Full", dropshipmentLive: "1" }]);var _root='/', _section = '', _svcroot='/', _webroot='www.alza.cz', _svchttp=false;var _hideCountrySelectionDialog = false;var _pageData ={"disableFooter":false,"disableJeanChat":false,"enableSignalRNotifications":true,"hasUserThirdEnabled":false,"isAlzaNeoOrder":false,"isAlzaPremiumFullMember":false,"isAnyBraintreePaymentAvailable":true,"isB2B":false,"isBot":false,"isCategoryPage":false,"isMobileDevice":false,"isOfflineShop":false,"isShowroom":false,"isThirdOrder":false,"isUnconfirmedVatPayer":false,"isUserLogged":false,"logJSErrors":false,"showPopUpDialog":false,"canShowLanguageSwitcherPopUp":false,"showPricesWithoutVatInfo":false,"userIsEmployee":false,"layoutChangedManually":false,"searchAutocompleteTimeout":300,"categoryId":1,"countryId":0,"forcedPopUpToShowId":null,"layoutType":1,"sectionCategoryId":1,"data":{"orderIdentifier":"00000000-0000-0000-0000-000000000000","countDownInterval":10000,"isApplePayPayment":false,"cardId":null,"showIncreaseOrderValueDialog":false},"alzaCarouselSettings":[],"visitorId":5806952747,"pageType":4,"adyenEnvironment":"live","apiServerUrl":"https://webapi.alza.cz","applePayPaymentId":"213","CDNUrl":"https://cdn.alza.cz/","sectionType":1,"countryCode":"CZ","countryDefaultCode":"CZ","countryLocale":"cs-CZ","CountryPhonePrefix":"+420","currency":"Kč","currencyCode":"CZK","eshopDescription":"Alza.cz","identityServerUrl":"https://identity.alza.cz","languageCode":"cs","logApiServerUrl":"https://logapi.alza.cz","signalRServerUrl":"https://signalr.alza.cz","signalRCoreServerUrl":"https://signalrcore.alza.cz","userCode":"","userDataCode":"","jeanSignalRCoreServerUrl":"https://jeansignalr.alza.cz","userEmail":"","userId":"","userName":"","userPhone":"","userProfileImgUrl":null,"vatIcDphValidationRegex":null,"userVatSpecificationType":null,"showCookieInfoBar":true,"configurationId":3};var _ios = true, _layout = 1;var _jsTree = true;var _facebookName = 'alza.cz';var _fbConnectUrl = '//connect.facebook.net/cs_CZ/all.js'; var _fbConnectId='181388238617107';//]]>
+</script>
+<script src="/lngscript.ashx?lang=CZ&amp;crc=480897252" type="text/javascript"></script>
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0FA39046">
+</div>
+<script type="text/javascript">
+//<![CDATA[
+(function(w, d, e, u, c, g, a, b){ w['SSJSConnectorObj'] = w['SSJSConnectorObj'] || { ss_cid: c, domain_info: g}; a = d.createElement(e); a.async = true; a.src = u; b = d.getElementsByTagName(e)[0]; b.parentNode.insertBefore(a, b); })(window, document,'script','https://cdn.perfdrive.com/aperture/aperture.js','a9ed','auto');$( function() {{ initOrder1(); }});//]]>
+</script>
+</form>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<div class="layout-1 cpg  lng-cz alza-cz alza" id="body2">
+<div id="body2Inner">
+<div id="body3Inner">
+<div class="js-info-message info-message default info-message-header can-close" data-info-message-id="232">
+<div class="info-message-content">
+<span class="info-message-icon alzaico-info"></span>
+<span class="info-message-text"><p data-pm-slice="1 1 []" id="isPasted"><strong>Cenové bomby jsou tady!</strong> Vyber si z produktů <strong>za extrémně nízké ceny</strong> a <a href="https://www.alza.cz/vyprodej-akce-sleva/e0.htm">přesvědč se sám</a>!</p>
+</span>
+<button class="js-info-message-close-btn info-message-close-btn alzaico-l-cross"></button>
+</div>
+</div>
+<div id="notificationBox">
+<div class="innerBox">
+<div class="wb">
+<div class="text">
+</div>
+<div class="clear"></div>
+</div>
+<span id="notificationBoxCloseBtn" class="closeBtn"><span></span>
+</span>
+</div>
+</div>
+<div class="page1" id="page">
+<h1 itemprop="name">
+</h1>
+<div id="headerPlaceholder" class="hidden"></div>
+<div id="header">
+<div id="logo">
+<a title="Alza" aria-label="Alza" href="/">
+<span></span>
+</a>
+</div>
+<div id="messageBar" class="hide">
+<div class="info hide"></div>
+<div class="error hide"></div>
+</div>
+</div>
+<div class=" priceGrpEmpty" id="pricegrp">
+<span></span>
+</div>
+<div id="content0c">
+<div id="content0">
+<script type="text/javascript">
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({"pageType":"cart","seoPageType":"cart","breadCrumb":"Alza|Počítače a notebooky|Notebooky","breadCrumbParsed":"[\"Alza|Počítače a notebooky|Notebooky\"]","itemID":"ADC253z10i","value":"15694","currency":"CZK","sCode":"loggedOut","waUsid":"loggedOut","cType":"Nepřihlášený zákazník","visitorId":"5806952747","lBtest":"B"}, {"crto":{"email":"","products":[{"id":"ADC253z10i","price":"18 990","quantity":"1"}]},"event":"crto_basketpage"});</script>
+<input id="hdnShowMsMultilicenceDialog" value="none" type="hidden">
+<div id="orderpage" class="order1">
+<div id="ordernav">
+<ul>
+<li class="first">
+<a class="m m1 sel" href="/Order1.htm">
+<span class="step">1</span>
+<strong>Košík</strong>
+</a>
+</li>
+<li>
+<a class="m m2" href="/Order2.htm">
+<span class="step">2</span>
+<strong>Doprava a&nbsp;platba</strong>
+</a>
+</li>
+<li>
+<a class="m m3" href="/Order3.htm">
+<span class="step">3</span>
+<strong>Dodací údaje</strong>
+</a>
+</li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="shoppingListOrder1 loading" data-gtm-vis-polling-id-643720_974="288">
+<div class="tabs" style="top: 0px;">
+<div class="line">
+<div class="tabContainer ui-sortable">
+<div class="tab basket selected ui-droppable" data-id="-1">
+<span class="normalBlock">
+<span class="name">Košík</span>
+<span class="count">(1)</span>
+</span>
+</div>
+</div>
+<div class="buttons">
+<span class="moreBtn" style="display: none;"></span>
+<span class="addBtn"></span>
+</div>
+</div>
+</div>
+<div class="colapsedTabs" style="top: 30px;">
+<div class="tabContainer ui-sortable"></div>
+</div>
+<div class="listsContainer">
+<div class="all">
+<div class="items">
+</div>
+</div>
+</div>
+</div>
+<div class="basketTab">
+<div data-react-client-component="orderAnnouncements" data-endpoint="/api/basket/v1/announcements" class="announcements"><div class="MuiScopedCssBaseline-root"><div class="alz6"></div></div></div>
+<div data-react-client-component="confirmAcceptanceDialog"><div class="MuiScopedCssBaseline-root"><div class="alz1"></div></div></div>
+<div class="alzBox warn" id="delayedDeliveryWarning" style="display:none;">
+</div>
+<div class="alzBox done hide" id="o1infoDiscountOk">
+<div id="disMsg">
+Dárkový poukaz byl vložen a aktivován
+</div>
+</div>
+<div class="item-options__container js-item-options-container" style="display: none;">
+<ul class="item-options__inner js-item-options-inner">
+<li class="item-options__option item-options__option--del js-item-options-del">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="item-options__icon"><path d="M0,0H20V20H0Z" fill="none" opacity="0"></path><path d="M16.151,5.66a.83.83,0,0,0-1.175,0L10.9,9.726,6.826,5.651A.831.831,0,1,0,5.651,6.826L9.726,10.9,5.651,14.976a.831.831,0,1,0,1.175,1.175L10.9,12.076l4.075,4.075a.831.831,0,1,0,1.175-1.175L12.076,10.9l4.075-4.075A.835.835,0,0,0,16.151,5.66Z" transform="translate(-0.901 -0.902)"></path></svg>
+<span class="item-options__text">Odstranit</span>
+</li>
+<li class="item-options__option item-options__option--buy-later js-item-options-buy-later">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20" class="item-options__icon"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{fill:#1653a4;fill-rule:evenodd;}</style><clipPath id="a"><rect class="a" width="20" height="20"></rect></clipPath></defs><g class="b"><rect class="a" width="20" height="20"></rect><path class="c" d="M10.859,11.566,12.793,13.5a.5.5,0,0,0,.707-.707l-1.934-1.934A1.127,1.127,0,0,0,11,9.492V5.5a.5.5,0,0,0-1,0V9.492a1.125,1.125,0,0,0,.859,2.074ZM10.5,18A7.5,7.5,0,1,1,18,10.5,7.5,7.5,0,0,1,10.5,18Z"></path></g></svg>
+<span class="item-options__text">Koupit později</span>
+</li>
+<li class="item-options__option item-options__option--add-to-list js-item-options-add-to-list">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="item-options__icon"><defs><style>.a{fill:none;}.b{fill:#e9242e;fill-rule:evenodd;}</style></defs><rect class="a" width="20" height="20"></rect><path class="b" d="M10,18l1.173-1.041q2.577-2.4,3.6-3.475a15.824,15.824,0,0,0,2.385-3,6.11,6.11,0,0,0,.846-3,4.564,4.564,0,0,0-.577-2.268,4.235,4.235,0,0,0-1.587-1.62A4.328,4.328,0,0,0,13.615,3a4.491,4.491,0,0,0-2,.471A4.847,4.847,0,0,0,10,4.728,4.847,4.847,0,0,0,8.385,3.471,4.452,4.452,0,0,0,6.4,3,4.306,4.306,0,0,0,2.587,5.209,4.505,4.505,0,0,0,2,7.476a5.9,5.9,0,0,0,.865,2.984,15.121,15.121,0,0,0,2.365,3q1,1.041,3.615,3.455Z"></path></svg>
+<span class="item-options__text">Uložit do seznamu</span>
+</li>
+</ul>
+</div>
+<div id="blocke" style="display:none;">
+<img class="emptyImage" src="Styles/full/images/bg-basket-empty.png" alt="">
+<div>
+<span>Jsem tak prázdný...</span>
+<a class="floor" href="/Floor.htm">Zobrazit katalog</a>
+</div>
+</div>
+<div id="blockne">
+<div id="o1basket">
+<div class="blockMotivations">
+</div>
+<table class="o1grid">
+<tbody><tr data-code="ADC253z10i" class="ui-draggable">
+<td class="c11">
+<a href="/dell-vostro-5370?dq=6778383">
+<img src="https://cdn.alza.cz/Foto/f1/AD/ADC253z10i.jpg" alt="" class="ui-draggable-handle">
+</a>
+</td>
+<td class="c1" id="order-item-402246518">
+<div class="nameAndAccessoriesContainer">
+<div class="nameContainer">
+<a class="mainItem" href="/dell-vostro-5370?dq=6778383">Notebook Dell Vostro 3510</a>
+<span class="c1x">(ADC253z10i)</span>
+</div>
+<div>
+<span class="c1p">+ ZDARMA Elektronická licence Bezstarostný servis Dell<br></span>
+</div>
+</div>
+<div class="iconContainer">
+</div>
+</td>
+<td class="c2">
+<div class="countInput" id="r402246518">
+<div class="countEdit">
+<input data-value="1" data-code="ADC253z10i" data-mincount="1" maxlength="5" value="1" type="text">
+</div>
+<div class="countPlus">
+</div>
+<div class="countMinus">
+</div>
+</div>
+</td>
+<td class="c3" id="o1tda6778383">
+<span class="avl">
+<span class="avlVal avl0 variant" id="av6778383" onclick="showAvlDialog3(this, 0, 402246518)">Skladem</span>
+</span>
+</td>
+<td class="c4">
+</td>
+<td class="c5">
+18&nbsp;990&nbsp;Kč
+</td>
+<td class="c6">
+<div class="item-options js-item-options" id="d402246518" data-commodityid="6778383">
+<span class="item-options__trigger js-item-options-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><rect width="20" height="20" fill="#fff" opacity="0"></rect><path d="M2.806,5.828a1.041,1.041,0,0,0,0,1.475l6.925,6.925a.83.83,0,0,0,1.175,0L17.831,7.3a1.043,1.043,0,0,0-1.475-1.475l-6.042,6.033L4.272,5.819A1.039,1.039,0,0,0,2.806,5.828Z" transform="translate(-0.5 0.48)"></path></svg></span>
+</div>
+</td>
+</tr>
+<tr class="accgrp475 accesories ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 warbl2" colspan="3" data-group-id="17" data-article-id="34118" data-group-name="Kancelářský balík" data-cancel-btn="Nepotřebuji Office">
+<a class="wc1" href="javascript:showWarrantyDialogO1('acc_402246518_475_6778383')">
+<img src="https://cdn.alza.cz//ImgW.ashx?fd=f4&amp;cd=SWOFFAe&amp;i=1.jpg" title="Bližší informace" alt="" class="ui-draggable-handle">
+</a>
+<div class="wc2">
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_475_6778383" data-groupid="17" data-notcombinablewith="" data-parent="402246518" data-short-name="Microsoft 365 Personal, 12 měsíců + instalace" data-daily-price="" type="checkbox"><label for="acc_402246518_475_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_475_6778383')">Microsoft 365 Personal, 12 měsíců + instalace</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_475_6778383">799&nbsp;Kč</label>
+</div>
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_364_6778383" data-groupid="17" data-notcombinablewith="" data-parent="402246518" data-short-name="Microsoft 365 Family, 15 měsíců" data-daily-price="" type="checkbox"><label for="acc_402246518_364_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_364_6778383')">Microsoft 365 Family, 15 měsíců</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_364_6778383">1&nbsp;790&nbsp;Kč</label>
+</div>
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_365_6778383" data-groupid="17" data-notcombinablewith="" data-parent="402246518" data-short-name="Microsoft 365 Personal, 15 měsíců" data-daily-price="" type="checkbox"><label for="acc_402246518_365_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_365_6778383')">Microsoft 365 Personal, 15 měsíců</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_365_6778383">1&nbsp;790&nbsp;Kč</label>
+</div>
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_594_6778383" data-groupid="17" data-notcombinablewith="" data-parent="402246518" data-short-name="Microsoft 365 Family, 12 měsíců" data-daily-price="" type="checkbox"><label for="acc_402246518_594_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_594_6778383')">Microsoft 365 Family, 12 měsíců</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_594_6778383">1&nbsp;690&nbsp;Kč</label>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<td class="c3"></td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="accgrp5 accesories ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 warbl2" colspan="3" data-group-id="2" data-article-id="3716" data-group-name="Záruka okamžité výměny" data-cancel-btn="V případě reklamace si počkám až 30 dnů">
+<a class="wc1" href="javascript:showWarrantyDialogO1('acc_402246518_5_6778383')">
+<img src="https://cdn.alza.cz/Images/warranty-okamzitaVymena.png" title="Bližší informace" alt="" class="ui-draggable-handle">
+</a>
+<div class="wc2 wc2_1">
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_5_6778383" data-groupid="2" data-notcombinablewith="" data-parent="402246518" data-short-name="Okamžitá výměna" data-daily-price="" type="checkbox"><label for="acc_402246518_5_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_5_6778383')">Záruka okamžité výměny</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_5_6778383">2&nbsp;279&nbsp;Kč</label>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<td class="c3"></td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="accgrp133 accesories ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 warbl2" colspan="3" data-group-id="1" data-article-id="2541" data-group-name="Pojištění prodloužené záruky" data-cancel-btn="Bez pojištění prodloužené záruky">
+<a class="wc1" href="javascript:showWarrantyDialogO1('acc_402246518_133_6778383')">
+<img src="https://cdn.alza.cz/Images/warranty-prodlouzenaZaruka.png" title="Bližší informace" alt="" class="ui-draggable-handle">
+</a>
+<div class="wc2">
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_133_6778383" data-groupid="1" data-notcombinablewith="" data-parent="402246518" data-short-name="+ 3 roky" data-daily-price="2,82&nbsp;Kč / den" type="checkbox"><label for="acc_402246518_133_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_133_6778383')">Pojistit prodlouženou záruku na +3 roky. Nejvýhodnější varianta.</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_133_6778383">3&nbsp;085&nbsp;Kč</label>
+</div>
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_127_6778383" data-groupid="1" data-notcombinablewith="" data-parent="402246518" data-short-name="+ 1 rok" data-daily-price="4,28&nbsp;Kč / den" type="checkbox"><label for="acc_402246518_127_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_127_6778383')">Pojistit prodlouženou záruku na +1 rok</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_127_6778383">1&nbsp;562&nbsp;Kč</label>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<td class="c3"></td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="accgrp137 accesories ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 warbl2" colspan="3" data-group-id="3" data-article-id="3996" data-group-name="Pojištění proti rozbití a krádeži" data-cancel-btn="Bez pojištění">
+<a class="wc1" href="javascript:showWarrantyDialogO1('acc_402246518_137_6778383')">
+<img src="https://cdn.alza.cz/Images/warranty-pojisteniZbozi.png" title="Bližší informace" alt="" class="ui-draggable-handle">
+</a>
+<div class="wc2">
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_137_6778383" data-groupid="3" data-notcombinablewith="29" data-parent="402246518" data-short-name="Pojištění na 2 roky" data-daily-price="3,43&nbsp;Kč / den" type="checkbox"><label for="acc_402246518_137_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_137_6778383')">Pojištění proti rozbití a krádeži na 2 roky</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_137_6778383">2&nbsp;504&nbsp;Kč</label>
+</div>
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_145_6778383" data-groupid="3" data-notcombinablewith="29" data-parent="402246518" data-short-name="Pojištění na 1 rok" data-daily-price="4,28&nbsp;Kč / den" type="checkbox"><label for="acc_402246518_145_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_145_6778383')">Pojištění proti rozbití a krádeži na rok</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_145_6778383">1&nbsp;562&nbsp;Kč</label>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<td class="c3"></td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="accgrp596 accesories ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 warbl2" colspan="3" data-group-id="12" data-article-id="36931" data-group-name="Antivir a bezpečnost" data-cancel-btn="Nechci antivir">
+<a class="wc1" href="javascript:showWarrantyDialogO1('acc_402246518_596_6778383')">
+<img src="https://cdn.alza.cz/Images/warranty-antivir4.png" title="Bližší informace" alt="" class="ui-draggable-handle">
+</a>
+<div class="wc2 wc2_1">
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_596_6778383" data-groupid="12" data-notcombinablewith="" data-parent="402246518" data-short-name="ESET Internet Security, 1 PC, 12 měsíců" data-daily-price="2,74&nbsp;Kč / den" type="checkbox"><label for="acc_402246518_596_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_596_6778383')">ESET Internet Security, 1 PC, 12 měsíců</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_596_6778383">999&nbsp;Kč</label>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<td class="c3"></td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="accesories hide accItem6778383 accgrp163 ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 warbl2" colspan="3" data-group-id="29" data-article-id="14544" data-group-name="Pojištění proti odcizení" data-cancel-btn="Bez pojištění proti odcizení">
+<a class="wc1" href="javascript:showWarrantyDialogO1('acc_402246518_163_6778383')">
+<img src="https://cdn.alza.cz/Images/warranty-insurance-29-selected.png" title="Bližší informace" alt="" class="ui-draggable-handle">
+</a>
+<div class="wc2">
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_163_6778383" data-groupid="29" data-notcombinablewith="3" data-parent="402246518" data-short-name="Pojištění na 1 rok" data-daily-price="3,14&nbsp;Kč / den" type="checkbox"><label for="acc_402246518_163_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_163_6778383')">Pojištění proti odcizení na 1 rok</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_163_6778383">1&nbsp;146&nbsp;Kč</label>
+</div>
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_156_6778383" data-groupid="29" data-notcombinablewith="3" data-parent="402246518" data-short-name="Pojištění na 2 roky" data-daily-price="2,60&nbsp;Kč / den" type="checkbox"><label for="acc_402246518_156_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_156_6778383')">Pojištění proti odcizení na 2 roky</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_156_6778383">1&nbsp;899&nbsp;Kč</label>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<td class="c3"></td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="accesories hide accItem6778383 accgrp40 ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 warbl2" colspan="3" data-group-id="7" data-article-id="4613" data-group-name="První spuštění" data-cancel-btn="Prvotní instalaci zvládnu sám">
+<a class="wc1" href="javascript:showWarrantyDialogO1('acc_402246518_40_6778383')">
+<img src="https://cdn.alza.cz/Images/warranty-prvniSpusteni.png" title="Bližší informace" alt="" class="ui-draggable-handle">
+</a>
+<div class="wc2">
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_40_6778383" data-groupid="7" data-notcombinablewith="" data-parent="402246518" data-short-name="Nastavení + Office" data-daily-price="" type="checkbox"><label for="acc_402246518_40_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_40_6778383')">Nastavení Super + Office 365</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_40_6778383">1&nbsp;190&nbsp;Kč</label>
+</div>
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_16_6778383" data-groupid="7" data-notcombinablewith="" data-parent="402246518" data-short-name="Nastavení STANDARD" data-daily-price="" type="checkbox"><label for="acc_402246518_16_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_16_6778383')">Nastavení počítače Standard</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_16_6778383">359&nbsp;Kč</label>
+</div>
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_17_6778383" data-groupid="7" data-notcombinablewith="" data-parent="402246518" data-short-name="Nastavení SUPER" data-daily-price="" type="checkbox"><label for="acc_402246518_17_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_17_6778383')">Nastavení počítače Super</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_17_6778383">599&nbsp;Kč</label>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<td class="c3"></td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="accesories hide accItem6778383 accgrp449 ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 warbl2" colspan="3" data-group-id="60" data-article-id="31566" data-group-name="Instalace na dálku" data-cancel-btn="Vše si nastavím sám">
+<a class="wc1" href="javascript:showWarrantyDialogO1('acc_402246518_449_6778383')">
+<img src="https://cdn.alza.cz/images/icon-instalace-na-dalku-grey.png" title="Bližší informace" alt="" class="ui-draggable-handle">
+</a>
+<div class="wc2 wc2_1">
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_449_6778383" data-groupid="60" data-notcombinablewith="" data-parent="402246518" data-short-name="Online Profi spuštění nového počítače" data-daily-price="" type="checkbox"><label for="acc_402246518_449_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_449_6778383')">Online Profi spuštění nového počítače</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_449_6778383">1&nbsp;199&nbsp;Kč</label>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<td class="c3"></td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="accesories hide accItem6778383 accgrp36 ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 warbl2" colspan="3" data-group-id="23" data-article-id="8973" data-group-name="Možnost vrátit zboží do 60 dnů" data-cancel-btn="Nebudu chtít zboží vrátit">
+<a class="wc1" href="javascript:showWarrantyDialogO1('acc_402246518_36_6778383')">
+<img src="https://cdn.alza.cz/Images/warranty-2mesicevraceni2.png" title="Bližší informace" alt="" class="ui-draggable-handle">
+</a>
+<div class="wc2 wc2_1">
+<div class="wc22 acc">
+<input class="warchb hiddenAlzaCheckbox" id="acc_402246518_36_6778383" data-groupid="23" data-notcombinablewith="" data-parent="402246518" data-short-name="Vrácení do 60 dnů" data-daily-price="22&nbsp;Kč / den" type="checkbox"><label for="acc_402246518_36_6778383" class=" alzacheckbox classic"></label>
+<a class="accessoryName" href="javascript:showWarrantyDialogO1('acc_402246518_36_6778383')">Možnost vrátit zboží do 60 dnů</a>
+<label class="lblAccessoriesPrice" for="acc_402246518_36_6778383">1&nbsp;329&nbsp;Kč</label>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<td class="c3"></td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="accmore6778383 ui-draggable">
+<td class="c11 ctr more"></td>
+<td colspan="3" class="o1-acc-more">
+<div>
+<a href="javascript:showhideAccessories(6778383)"><span>Další služby</span></a>
+</div>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr class="ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 hookbl" colspan="3">
+<div class="wc1">
+<img src="https://cdn.alza.cz/Foto/f1/SW/SWOFPECZbII.jpg" alt="" class="ui-draggable-handle">
+</div>
+<div class="wc2">
+<input class="hookchb hiddenAlzaCheckbox" id="hook_402246518_6727052" type="checkbox"><label for="hook_402246518_6727052" class=" alzacheckbox classic"></label>
+<div class="nameContainer">
+<a class="hookName" target="_blank" href="/microsoft-365-pro-jednotlivce-cz-box-d6727052.htm">Kancelářský software Microsoft 365 pro jednotlivce CZ (BOX)</a>
+<span class="originalPrice"></span>
+<span class="normalPrice">806&nbsp;Kč</span>
+<div class="reasonToBuy">
+Skvělý výběr! Co takhle ještě přidat k nákupu Microsoft 365 se slevou a instalací zdarma?
+</div>
+</div>
+</div>
+</td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 hookbl" colspan="3">
+<div class="wc1">
+<img src="https://cdn.alza.cz/Foto/f1/AE/AET2002a.jpg" alt="" class="ui-draggable-handle">
+</div>
+<div class="wc2">
+<input class="hookchb hiddenAlzaCheckbox" id="hook_402246518_6493701" type="checkbox"><label for="hook_402246518_6493701" class=" alzacheckbox classic"></label>
+<div class="nameContainer">
+<a class="hookName" target="_blank" href="/eternico-office-wired-kd2002-cz-sk-d6493701.htm">Klávesnice Eternico Office Wired KD2002 - CZ/SK</a>
+<span class="originalPrice">369&nbsp;Kč</span>
+<span class="normalPrice">287&nbsp;Kč</span>
+</div>
+</div>
+</td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 hookbl" colspan="3">
+<div class="wc1">
+<img src="https://cdn.alza.cz/Foto/f1/AL/ALZOF002.jpg" alt="" class="ui-draggable-handle">
+</div>
+<div class="wc2">
+<input class="hookchb hiddenAlzaCheckbox" id="hook_402246518_7056492" type="checkbox"><label for="hook_402246518_7056492" class=" alzacheckbox classic"></label>
+<div class="nameContainer">
+<a class="hookName" target="_blank" href="/alza-air-duster-400-ml-d7056492.htm">Stlačený plyn Alza Air Duster 400 ml</a>
+<span class="originalPrice"></span>
+<span class="normalPrice">79&nbsp;Kč</span>
+</div>
+</div>
+</td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 hookbl" colspan="3">
+<div class="wc1">
+<img src="https://cdn.alza.cz/Foto/f1/OR/ORI007.jpg" alt="" class="ui-draggable-handle">
+</div>
+<div class="wc2">
+<input class="hookchb hiddenAlzaCheckbox" id="hook_402246518_5674230" type="checkbox"><label for="hook_402246518_5674230" class=" alzacheckbox classic"></label>
+<div class="nameContainer">
+<a class="hookName" target="_blank" href="/orico-w6ph4-u3-v1-bk-d5674230.htm">USB Hub Orico W6PH4-U3-V1-BK</a>
+
+<span class="originalPrice">299&nbsp;Kč</span>
+<span class="normalPrice">152&nbsp;Kč</span>
+</div>
+</div>
+</td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="ui-draggable">
+<td class="c11 ctr"></td>
+<td class="c1 hookbl" colspan="3">
+<div class="wc1">
+<img src="https://cdn.alza.cz/Foto/f1/AP/APWCB502a.jpg" alt="" class="ui-draggable-handle">
+</div>
+<div class="wc2">
+<input class="hookchb hiddenAlzaCheckbox" id="hook_402246518_6631978" type="checkbox"><label for="hook_402246518_6631978" class=" alzacheckbox classic"></label>
+<div class="nameContainer">
+<a class="hookName" target="_blank" href="/alzapower-alucore-premium-hdmi-20-high-speed-4k-1m-cerny-d6631978.htm">Video kabel AlzaPower AluCore Premium HDMI 2.0 High Speed 4K 1m černý</a>
+<span class="originalPrice"></span>
+<span class="normalPrice">153&nbsp;Kč</span>
+<div class="reasonToBuy">
+Video kabel nemusí být součástí balení
+</div>
+</div>
+</div>
+</td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+<tr class="ui-draggable">
+<td class="c11 ctr last"></td>
+<td class="c1 hookbl" colspan="3">
+<div class="wc1">
+<img src="https://cdn.alza.cz/Foto/f1/AE/AET004101a.jpg" alt="" class="ui-draggable-handle">
+</div>
+<div class="wc2">
+<input class="hookchb hiddenAlzaCheckbox" id="hook_402246518_6900096" type="checkbox"><label for="hook_402246518_6900096" class=" alzacheckbox classic"></label>
+<div class="nameContainer">
+<a class="hookName" target="_blank" href="/eternico-wireless-2-4-ghz-basic-mouse-ms100-cerna-d6900096.htm">Myš Eternico Wireless 2.4 GHz Basic Mouse MS100 černá</a>
+<span class="originalPrice">199&nbsp;Kč</span>
+<span class="normalPrice">97&nbsp;Kč</span>
+</div>
+</div>
+</td>
+<td class="c4"></td>
+<td class="c5"></td>
+<td class="c6"></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div id="o1Wallet">
+<div class="o1walletRow dis">
+<div class="c1">
+<div class="icon"></div>
+<a href="/kredit">Dobití Alza kreditu</a>
+<div class="info">
+<div class="infoPopup infoDialog">
+<div class="body article">
+<span><p><strong>Alza Kredit - nejrychlejší placení</strong></p><ul><li>Dobij při běžném nákupu</li><li>Využij pro příští&nbsp;placení</li><li><a href="../kredit">Více informací</a></li></ul></span>
+</div>
+</div>
+</div>
+</div>
+<div class="c2">
+<div class="text CZ">
+</div>
+<div class="countInput awc dis" id="rSL700">
+<div class="countEdit">
+<input data-code="SL700" maxlength="5" value="0" type="text" disabled="disabled">
+</div>
+<div class="countPlus"></div>
+<div class="countMinus"></div>
+</div>
+<div class="infoPopup infoDialog">
+<div class="body warn">
+ <span>Pro nabití kreditu se musíte <a href="javascript:void(0)">přihlásit</a>.</span>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="top" id="sumc">
+<div class="order1ActionsContainer">
+<div id="cpcm_cpc_ctl09_order1Actions" class="order1Actions">
+<div class="insertItemBlock insertDiscount" id="discountContainerDiscountCode">
+<i class="fa fa-chevron-circle-right linkIcon" aria-hidden="true"></i>
+<div class="insertItemTitle">
+<span>Využít slevový / dárkový poukaz</span>
+</div>
+<div class="insertItemInput">
+<input class="inputText placeholder" id="txtDiscountCode" placeholder="Slevový kód / Dárkový šek" data-recording-gdpr-safe="recording-gdpr-safe" maxlength="50" type="text">
+<a class="insertItemBtn btnx blue small" onclick="return insertDiscountCodeOrder1();" href="#">Vložit</a>
+</div>
+<div id="vouchersGiftContainer">
+</div>
+</div>
+<div class="insertItemBlock insertProduct" id="discountContainerInsertByCode">
+<i class="fa fa-chevron-circle-right linkIcon" aria-hidden="true"></i>
+<div class="insertItemTitle">
+<span>Přidat zboží</span>
+</div>
+<div class="insertItemInput">
+<input class="inputText ui-autocomplete-input placeholder" id="inputByCode" placeholder="Název zboží, kód zboží" data-recording-gdpr-safe="recording-gdpr-safe" maxlength="50" type="text" autocomplete="off">
+<a class="insertItemBtn btnx blue small" onclick="return insertByCodeOrder1();" href="#">Vložit</a>
+<div class="insertItemAutocomplete"><ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul></div>
+</div>
+</div>
+</div>
+</div>
+<div id="sum">
+<div>
+<table class="o1sum">
+<tbody><tr>
+<td class="c1">
+<span>Celkem bez DPH</span>
+</td>
+<td class="c2">
+<span>15&nbsp;694,21&nbsp;Kč</span>
+</td>
+</tr>
+<tr>
+<td class="c1">
+<span class="last label">K úhradě s DPH</span>
+</td>
+<td class="c2">
+<span class="last price">18&nbsp;990&nbsp;Kč</span>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="obuttons">
+<a class="btnx normal grey arrowedLeft" href="/dell-vostro-5370?dq=6778383"><span class="arrow left"></span><span>Zpět k nákupu</span></a>
+<div class="giftContainer dis">
+<input class="hiddenAlzaCheckbox" id="chbxGift" type="checkbox"><label for="chbxGift" class=" alzacheckbox classic">Poslat jako dárek</label>
+<div class="info">&nbsp;</div>
+<div class="hide article hoverDialog" id="lbGiftHover" style="display: none;">
+<div id="phGiftNok">
+<span class="strong">Nelze darovat</span>
+<ul>
+<li>
+<span>Košík obsahuje položky, které nelze darovat</span>
+</li>
+<li>
+<a href="/darovani-emailem-art9163.htm">Více informací</a>
+</li>
+</ul>
+</div>
+<div class="hide" id="phGiftOk">
+<span class="strong">Darování - udělejte radost blízkým</span>
+<ul>
+<li>
+<span>Obsah košíku bude odeslán na&nbsp;adresu, kterou zvolíte</span>
+</li>
+<li>
+<a href="/darovani-emailem-art9163.htm">Více informací</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div id="blockBtnRight">
+<a class="btnx normal green arrowedRight order2 js-button-order-continue" href="#"><span>Pokračovat</span><span class="arrow right"></span></a>
+</div>
+<br class="clear">
+</div>
+<div data-react-client-component="order1Body" data-api-url="/services/restservice.svc/v1/getCommodityLists/" data-buy-later-list-id=""><div class="MuiScopedCssBaseline-root"><div class="alz11"></div></div></div>
+<div class="Order1LastOrderAcc">
+</div>
+<div class="leftCol">
+<span></span>
+</div>
+<div class="rightCol">
+<div class="oheartContainer">
+<div class="oheart">
+<span class="bold">Přispějte na dobrou věc</span>
+<div class="oheartInfo">
+<div class="oheartImg">
+<a id="hlHeart" href="/aloisovy-ponozky-nadacni-fond-senorina-d5320712.htm"><img id="imgHeart" alt="" src="https://cdn.alza.cz/Foto/f1/XX/XX222a.jpg"></a>
+</div>
+<div id="oheartTextInfo">&nbsp;<a href="http://www.nfsenorina.cz/" target="_blank">více&nbsp;»</a></div>
+<br class="clear">
+</div>
+<div>
+<select class="oheartSelect" onchange="heartChange(this.options[this.selectedIndex].value)">
+<option value="5320712">Aloisovy ponožky "Nadační fond Seňorina" Dámské - 180&nbsp;Kč</option>
+</select>
+<a class="orderButton" onclick="orderHeart()" href="#">Vložit</a>
+<br class="clear">
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="topbar">
+<span class="firstx section">
+<span class="menu alzapremium">
+<a id="lblAp" href="https://www.alza.cz/alzaplus">Vyzkoušejte nové AlzaPlus+</a>
+</span>
+</span>
+<span class="menu userinfo">
+<span class="first section">
+<a id="lblMujUcet" href="/muj-ucet/profil">Moje Alza</a>
+</span>
+<span class="last llOpt section">
+<a class="lblLogin" id="lblLogin" href="javascript:loginBtnClick(this);">Přihlásit</a>
+</span>
+</span>
+<span class="b2b section">
+<a href="https://www.alza.cz/pro-firmy">Pro firmy</a>
+</span>
+<span class="menu">
+<span id="headerbottom_liHowToBuy" class="section">
+<a href="https://www.alza.cz/jak-nakoupit-art13603.htm">Jak nakoupit</a>
+</span>
+<span id="headerbottom_liCareer" class="section">
+<a href="/kariera">Kariéra</a>
+</span>
+</span>
+<div class=" czsk" id="languages">
+<div class="shipto">
+</div>
+<div class="langCZ CZ" id="languageSwitch">
+<div class="selector"><span class="alzaico-f-arrow-bottom arrow-bottom"></span></div>
+<div id="languageList" style="display:none;">
+<div class="country">
+<a class="countrySw CZ" href="https://www.alza.cz/">Alza.cz</a>
+<a class="countrySw CZ langEN" href="https://www.alza.cz/EN/">Alza.cz&nbsp;-&nbsp;English</a>
+<a class="countrySw SK" href="https://www.alza.sk/">Alza.sk</a>
+<a class="countrySw SK langEN" href="https://www.alza.sk/EN/">Alza.sk&nbsp;-&nbsp;English</a>
+</div>
+<div class="article">
+<a class="langXX" href="/article/1939.htm">tax free</a>
+</div>
+<div class="country world">
+<a class="countrySw AT" data-id="22" href="https://www.alza.at">Austria</a>
+<a class="countrySw HR" data-id="28" href="https://www.alzashop.com/?country=HR">Croatia</a>
+<a class="countrySw FR" data-id="12" href="https://www.alza.fr">France</a>
+<a class="countrySw DE" data-id="3" href="https://www.alza.de">Germany</a>
+<a class="countrySw HU" data-id="10" href="https://www.alza.hu">Hungary</a>
+<a class="countrySw PL" data-id="9" href="https://www.alzashop.com/?country=PL">Poland</a>
+<a class="countrySw RO" data-id="23" href="https://www.alzashop.com/?country=RO">Romania</a>
+<a class="countrySw SI" data-id="25" href="https://www.alzashop.com/?country=SI">Slovenia</a>
+<a class="countrySw GB" data-id="6" href="https://www.alza.co.uk">United&nbsp;Kingdom</a>
+</div>
+<div class="pointer"><span class="alzaico-f-arrow-top arrow-top"></span></div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div id="top1">
+<div class="newWisperer" id="search">
+<div id="sec" class="alzaico-l-search">
+<input id="edtSearch" autocomplete="off" data-recording-gdpr-safe="recording-gdpr-safe" aria-label="Vyhledávání" maxlength="100" value="Co hledáte? Např. kabel AlzaPower..." type="text" class="dfl ui-autocomplete-input">
+</div>
+<div id="btnSearch">
+Hledat
+</div>
+<ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul></div>
+<div class="headericonsc">
+<div class="shoppingListIcons">
+</div>
+<div id="basketc">
+<div id="basket">
+<a id="basketLink" href="/Order1.htm">
+<span class="alzaico-f-basket"></span>
+<span class="count">1</span>
+<span id="price">18&nbsp;990&nbsp;Kč</span>
+</a>
+</div>
+<div class="blockBasketPopup" id="basketpopup" data-page-type="4" style="display:none;">
+<div class="blockBasketPopupWrapper">
+<div class="basketPopupArrow"></div>
+<div class="basketPopupItems">
+<div class="basketPopupItem">
+<a class="basketItemLink" data-order-item-id="402246518" href="/dell-vostro-5370?dq=6778383">
+<span class="basketItemImage">
+<img width="60" data-src="https://cdn.alza.cz/Foto/f1/AD/ADC253z10i.jpg" class="lazy" src="/img/blank.gif" alt="">
+</span>
+<span class="basketItemText">
+<span class="itemTitle">Notebook Dell Vostro 3510</span>
+<br>
+<span class="itemPrice">18&nbsp;990,-</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="shoppingList">
+</div>
+</div>
+</div>
+<div id="footercTop">
+</div>
+</div>
+<div id="footerc">
+<div id="alzaBenefits" data-benefits-count="17" data-benefits-actual="4">
+<a id="benefitHyp" data-text-0="/article/art3748.htm" data-text-1="/article/art3748.htm" data-text-2="/article/art3748.htm" data-text-3="/article/art3748.htm" data-text-4="/article/art3748.htm" data-text-5="/article/art3748.htm" data-text-6="/article/art3748.htm" data-text-7="/article/art3748.htm" data-text-8="/student" data-text-9="/article/art3748.htm" data-text-10="/article/art3748.htm" data-text-11="/article/art3748.htm" data-text-12="/article/art3748.htm" data-text-13="/article/art3748.htm" data-text-14="/article/art3748.htm" data-text-15="/article/art3748.htm" data-text-16="/media" href="/article/art3748.htm">
+<div class="content">
+<div class="benefitsImg">
+</div>
+<div class="benefitsTexts">
+<span class="benefitsTop" id="benefitSmall" data-text-0="Proč nakupovat u nás?" data-text-1="Proč nakupovat u nás?" data-text-2="Proč nakupovat u nás?" data-text-3="Proč nakupovat u nás?" data-text-4="Proč nakupovat u nás?" data-text-5="Proč nakupovat u nás?" data-text-6="Proč nakupovat u nás?" data-text-7="Proč nakupovat u nás?" data-text-8="Proč nakupovat u nás?" data-text-9="Proč nakupovat u nás?" data-text-10="Proč nakupovat u nás?" data-text-11="Proč nakupovat u nás?" data-text-12="Proč nakupovat u nás?" data-text-13="Proč nakupovat u nás?" data-text-14="Proč nakupovat u nás?" data-text-15="Proč nakupovat u nás?" data-text-16="Proč nakupovat u nás?">Proč nakupovat u nás?</span>
+<span class="benefitsBottom" id="benefitBig" data-text-0="Naše prodejny jsou otevřené i v sobotu a v neděli" data-text-1="Doručujeme velmi rychle, klidně v den nákupu" data-text-2="Nabízíme nejširší výběr světových značek" data-text-3="Máme největší sortiment elektroniky a počítačů" data-text-4="Naše zákaznická podpora je k dispozici 24 hodin denně" data-text-5="Máme zkušenosti. Jsme na trhu přes 27 let" data-text-6="Nemusíte se registrovat, abyste nakoupili" data-text-7="Nabízíme odběrná místa po celé ČR, některá jsou otevřená 24 hodin denně" data-text-8="Pro studenty s ISIC průkazem nabízíme zajímavé slevy" data-text-9="Pro pravidelné zákazníky nabízíme hromadu zvýhodnění v rámci VIP programu" data-text-10="Naše služby stále vylepšujeme v závislosti na zpětné vazbě zákazníků" data-text-11="Stále inovujeme a přinášíme novinky, které vám zpříjemní nákup" data-text-12="Peníze při odstoupení od smlouvy vracíme ihned" data-text-13="Nabízíme nadstandardní poradenství oproti konkurenci" data-text-14="V Praze doručujeme 24 hodin denně" data-text-15="Pohodlně u nás nakoupíte také z chytrého telefonu a tabletu" data-text-16="Máme největší digitální knihovnu na trhu (e-knihy, audioknihy, časopisy)">Naše zákaznická podpora je k dispozici 24 hodin denně</span>
+</div>
+</div>
+</a>
+</div>
+<div id="footer">
+<div id="footerContent"><!-- style for awards -->
+<link rel="stylesheet" href="https://cdn.alza.cz/Foto/or/footerAwards/build/css/style.min.css?ver=2.0">
+<!-- awards -->
+<div class="awards-cz" id="awardsBanner">
+<div class="footerAwards">
+<div class="footerAwards__wrapper">
+<!-- payments -->
+<div class="footerAwards__payments">
+<div class="footerAwards__logo-wrapper height40">
+<img src="https://www.alza.cz/img/blank.gif" alt="Mastercard" class="footerAwards__logo-wrapper--logo logo-mastercard lazy" data-src="https://cdn.alza.cz/Foto/or/footerAwards/build/img/mastercard.svg">
+</div>
+<div class="footerAwards__logo-wrapper height40">
+<img src="https://www.alza.cz/img/blank.gif" alt="Maestro" class="footerAwards__logo-wrapper--logo logo-maestro lazy" data-src="https://cdn.alza.cz/Foto/or/footerAwards/build/img/maestro.svg">
+</div>
+<div class="footerAwards__logo-wrapper height25">
+<img src="https://www.alza.cz/img/blank.gif" alt="Visa" class="footerAwards__logo-wrapper--logo logo-visa lazy" data-src="https://cdn.alza.cz/Foto/or/footerAwards/build/img/visa-2022.svg">
+</div>
+<div class="footerAwards__logo-wrapper height30">
+<img src="https://www.alza.cz/img/blank.gif" alt="PayPal" class="footerAwards__logo-wrapper--logo logo-paypal lazy" data-src="https://cdn.alza.cz/Foto/or/footerAwards/build/img/paypal.svg">
+</div>
+<div class="footerAwards__logo-wrapper height35">
+<img src="https://www.alza.cz/img/blank.gif" alt="ISIC" class="footerAwards__logo-wrapper--logo logo-isic lazy" data-src="https://cdn.alza.cz/Foto/or/footerAwards/build/img/isic.svg">
+</div>
+</div>
+<!-- awards -->
+<div class="footerAwards__awards">
+<!-- cz -->
+<div class="footerAwards__logo-wrapper height40">
+<img src="https://www.alza.cz/img/blank.gif" alt="Křišťálová lupa 2019" class="footerAwards__logo-wrapper--logo logo-kristalova-lupa lazy" data-src="https://cdn.alza.cz/Foto/or/footerAwards/build/img/kristalova-lupa-2019.png">
+</div>
+<div class="footerAwards__logo-wrapper height45">
+<img src="https://www.alza.cz/img/blank.gif" alt="Obchodník roku 2021" class="footerAwards__logo-wrapper--logo logo-obchodnik-roku lazy" data-src="https://cdn.alza.cz/Foto/or/footerAwards/build/img/obchodnik-roku-2021.svg">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- END of PAYMENTS/AWARDS -->
+<!-- <div class="paymsAwards">
+<div class="paPayms"><span class="logoPaypal">&nbsp;</span> <span class="logoMastercard">&nbsp;</span> <span class="logoVisa">&nbsp;</span> <span class="logoIsic">&nbsp;</span></div>
+<div class="paAwards"><span class="logo-kristalova-lupa">&nbsp;</span><span class="logoObchodnikRokuCZ">&nbsp;</span> <span class="logoAppRoku">&nbsp;</span></div>
+</div> -->
+<div class="footerLinks">
+<ul class="shopping">
+<li class="top"><a href="/jak-nakoupit-art13603.htm">Jak nakoupit</a></li>
+<li><a href="/doruceni">Možnosti doručení</a></li>
+<li><a href="/strucny-prehled-moznosti-zaplaceni-art112.htm">Možnosti platby</a></li>
+<li><a href="/splatky">Nákup na splátky</a></li>
+<li><a href="/seznam-prodejen-a-alzaboxu">Prodejní síť</a></li>
+<li><a href="/obchodni-podminky-art10.htm">Obchodní podmínky</a></li>
+<li><a href="/privacy-policy">Ochrana osobních údajů</a></li>
+<li><a href="/servis-v-alza-cz">Reklamace a vrácení</a></li>
+<li><a href="/znacky.htm">Zboží dle značek</a></li>
+<li><a href="/sluzby">Přehled služeb</a></li>
+</ul>
+<ul class="order">
+<li class="top"><a href="/muj-ucet/objednavky.htm">Vaše objednávky</a></li>
+<li><a href="/sledovani-trasy-zasilky.htm">Sledování trasy balíku</a></li>
+<li><a href="/muj-ucet/objednavky.htm">Stav objednávky</a></li>
+<li><a href="/muj-ucet/reklamace-a-vraceni">Stav reklamace</a></li>
+<li><a href="/jak-nakoupit-art13603.htm#faq">Nejčastější dotazy</a></li>
+</ul>
+<ul class="aboutus">
+<li class="top"><a href="/o-nas">O společnosti</a></li>
+<li><a href="/zakladni-informace">Základní informace</a></li>
+<li><a href="/pro-media">Pro média</a></li>
+<li><a href="/kariera">Kariéra</a></li>
+<li><a href="/kontakt">Kontaktujte nás</a></li>
+<li><a href="/aplikace">Aplikace</a></li>
+<li><a href="/nase-logisticka-centra">Sklady / LC</a></li>
+<li><a href="/pomahame-potrebnym">Pomáháme potřebným</a></li>
+<li><a href="/protikorupcni-politika-alza">Protikorupční politika</a></li>
+</ul>
+<ul class="for">
+<li class="top">
+<a class="b2b" href="/pro-firmy"><span class="alzaico-f-business"></span>Alza pro firmy</a>
+</li>
+<!--
+<li class="top">
+<a class="b2b" href="/B2B-program"><span class="alzaico-f-business"></span>B2B Program</a>
+</li>!-->
+<!--<li class="top"><a class="edu" href="https://www.alza.cz/skoly/">Alza pro školy</a></li>-->
+<li class="top">
+<a class="b2b" href="https://affiliate.alza.cz"><span class="alzaico-f-money"></span>Alza Affiliate</a>
+</li>
+<li class="top">
+<a class="isic" href="https://www.alza.cz/student"><span class="alzaico-f-student"></span>Alza pro studenty</a>
+</li>
+<li class="top">
+<a class="vip" href="https://www.alza.cz/stante-se-vip-zakaznikem-art16147.htm"><span class="alzaico-f-crown"></span>Alza VIP program</a>
+</li>
+<li class="top">
+<a class="b2b" href="https://marketplace.alza.cz"><span class="alzaico-f-business"></span>Alza Marketplace</a>
+</li>
+</ul>
+<!-- Alza.cz confirms that Mr. Lukas Mikolasek has the right to add the domain www.alza.cz to the corporate account Trustpilot -->
+</div>
+<div class="footerPillars">
+<ul>
+<li class="reliable">
+<a href="/article/nejspolehlivejsi-internetovy-obchod-v-CR-3748.htm" onclick="_gaq.push(['_trackEvent', 'paticka', 'Pilire', 'Nejspolehlivejsi']);"><i class="alzaico-f-award"></i><span>Nejspolehlivější<br>internetový obchod v ČR</span></a>
+</li>
+<li class="premium">
+<a class="footerPillars__alzaPlus" href="/alzaplus" onclick="_gaq.push(['_trackEvent', 'paticka', 'Pilire', 'Alza Plus']);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" width="160" height="48">
+<path d="M12.413,37.027c-.058-.31-.083-.624-.076-.939,0-.548,.041-1.446,.117-2.228-1.721,2.537-3.593,3.593-6.323,3.593-3.593,0-6.13-2.304-6.13-5.547,0-2.887,1.72-5.075,4.841-6.171,1.721-.624,2.773-.782,7.694-1.213l1.289-.117c.126-.351,.205-.718,.233-1.091,0-.974-.858-1.564-2.228-1.564-1.481,0-2.418,.624-3.2,2.111l-6.288-1.248c.567-1.404,1.548-2.601,2.812-3.435,1.913-1.289,4.375-1.913,7.609-1.913,5.506,0,8.866,2.03,8.866,5.349,0,.939-.583,4.765-1.68,10.657-.12,.749-.185,1.505-.193,2.264,.008,.498,.06,.993,.157,1.481h-7.5v.011Zm-2.969-8.283c-.964,.456-1.574,1.431-1.564,2.497-.037,.848,.621,1.567,1.47,1.604,.07,.003,.14,.001,.21-.005,1.269-.07,2.396-.836,2.928-1.991,.363-.951,.574-1.953,.624-2.969-2.262,.24-2.81,.398-3.668,.865Zm19.518,8.283h-7.303l4.375-26.045h7.303l-4.375,26.045Zm18.304,0H30.046l.741-4.334,9.529-10.232h-7.19l.782-4.684h16.595l-.625,3.748-10.074,10.698h8.275l-.815,4.804Zm13.428,0c-.058-.31-.083-.624-.076-.939,0-.548,.041-1.446,.117-2.228-1.721,2.537-3.593,3.593-6.323,3.593-3.593,0-6.131-2.304-6.131-5.547,0-2.887,1.721-5.075,4.841-6.171,1.721-.624,2.773-.782,7.694-1.213l1.289-.117c.126-.351,.205-.718,.233-1.091,0-.974-.858-1.564-2.228-1.564-1.481,0-2.418,.624-3.2,2.111l-6.288-1.248c.567-1.404,1.548-2.601,2.812-3.435,1.913-1.289,4.375-1.913,7.609-1.913,5.506,0,8.866,2.03,8.866,5.349,0,.939-.583,4.765-1.68,10.657-.12,.749-.185,1.505-.193,2.264,.008,.498,.06,.993,.157,1.481h-7.5v.011Zm-2.969-8.283c-.964,.456-1.574,1.431-1.564,2.497-.037,.848,.621,1.567,1.47,1.604,.07,.003,.14,.001,.21-.005,1.269-.07,2.396-.836,2.928-1.991,.363-.951,.574-1.953,.624-2.969-2.262,.24-2.805,.398-3.668,.865h0ZM154.222,10.883l.992-5.845-5.244-.181-.986,6.025h-5.821l-.752,5.023,5.699,.146-1.027,6.055h5.405l1.102-6.037h5.547l.863-5.186h-5.778Zm-70.855,6.889l-.548,3.086c1.721-2.736,3.004-3.593,5.425-3.593,4.025,0,6.597,3.2,6.597,8.236,.013,3.014-.901,5.959-2.619,8.435-1.415,2.204-3.861,3.529-6.48,3.512-2.264,0-3.512-.706-4.801-2.695l-1.406,8.391h-7.303l4.258-25.38h6.877v.009Zm-1.564,12.693c0,1.446,.782,2.347,1.991,2.347,1.365,0,2.147-.974,2.736-3.319,.385-1.495,.619-3.026,.7-4.568,0-1.838-.7-2.812-2.071-2.812-1.248,0-1.913,.665-2.537,2.619-.383,1.894-.655,3.807-.817,5.732h-.001Zm20.073,6.562h-7.303l4.375-26.045h7.303l-4.375,26.045Zm21.086,0h-6.953l.624-3.593c-1.756,2.928-3.627,4.1-6.44,4.1-3.045,0-5.232-1.913-5.232-4.568,.063-1.061,.193-2.117,.391-3.162l1.991-12.028h7.418l-1.872,11.013c-.129,.631-.206,1.271-.233,1.914,0,.939,.467,1.406,1.33,1.406,1.639,0,2.731-1.6,3.278-4.801l1.604-9.529h7.303l-3.209,19.247h0Zm16.135-13.55c-.548-1.289-1.68-1.872-3.634-1.872-1.213,0-1.991,.466-1.991,1.173,0,.665,.624,1.097,1.954,1.33,1.853,.276,3.672,.747,5.425,1.406,2.304,1.091,3.512,2.812,3.512,5.075-.025,2.058-1.062,3.972-2.773,5.116-1.68,1.173-4.019,1.756-6.872,1.756-3.045,0-5.466-.624-7.338-1.913-1.382-.866-2.342-2.266-2.654-3.867l6.014-.858c.624,1.481,1.796,2.071,4.06,2.071,1.523,0,2.537-.508,2.537-1.213,0-.466-.467-.823-1.33-1.015-4.684-1.015-5.582-1.289-6.795-2.071-1.796-1.173-2.654-2.619-2.654-4.533,0-4.1,3.477-6.756,8.866-6.756,2.241-.069,4.459,.484,6.405,1.599,1.368,.686,2.418,1.875,2.928,3.319l-5.661,1.254h0Z"></path>
+</svg>
+<span>Neplaťte za doručení<br>s&nbsp;AlzaPlus+</span>
+</a>
+<style>
+.footerPillars__alzaPlus svg {
+fill: #a6a6a6;width: 160px;height: 48px;margin-right: -10px
+}
+.footerPillars__alzaPlus:hover svg {
+fill: #fff
+}
+</style>
+</li>
+<li class="gettoday">
+<a href="/article/nejspolehlivejsi-internetovy-obchod-v-CR-3748.htm" onclick="_gaq.push(['_trackEvent', 'paticka', 'Pilire', 'Jeste dnes']);"><i class="alzaico-f-clock"></i><span>Cokoliv chcete, můžete<br>mít ještě dnes</span></a>
+</li>
+<li class="pickup">
+<a href="/seznam-prodejen-a-alzaboxu " onclick="_gaq.push(['_trackEvent', 'paticka', 'Pilire', 'Odberna mista']);"><i class="alzaico-f-shop"></i><span>Prodejny a odběrná místa<br>po celé ČR</span></a>
+</li>
+</ul>
+</div>
+<div class="footerCopyright">
+<div class="fcContent">
+<div class="fccCopy">
+© 1994 - 2022 Alza.cz a.s.
+<span class="gdpr-info"><span class="fake-link">Info o zpracování osobních údajů</span> <span class="icon alzaico-f-info"></span>
+<span class="info-cnt"><span class="info" id="gdprInfo"><strong>Správce os. údajů</strong>: Alza.cz&nbsp;a.s., IČO&nbsp;270&nbsp;82&nbsp;440 (<a href="/kontakt" target="_blank">kontakt</a>).<br><strong>Účel zpracování os.&nbsp;údajů</strong>: uzavření a&nbsp;plnění smlouvy. V&nbsp;případě cookies je účelem zpracování zajištění funkčnosti webu, personalizace obsahu a&nbsp;analýza návštěvnosti. Příjemcem cookies je vedle správce os.&nbsp;údajů i&nbsp;společnost Google&nbsp;Inc. v&nbsp;rámci používání nástroje Google Analytics.<br><strong>Právní základ zpracování</strong>: nezbytnost uzavření a&nbsp;plnění smlouvy a&nbsp;v&nbsp;případě cookies oprávněný zájem na funkčnosti našich webových stránek pro naše návštěvníky a&nbsp;zlepšení a&nbsp;zefektivnění jejich budoucího fungování. Proti zpracování cookies tímto způsobem můžete vznést námitku prostřednictvím našeho kontaktního formuláře (Kontakt &gt; Ostatní &gt; Osobní údaje).<br><a href="/privacy-policy" target="_blank">Více informací</a></span></span>
+</span>
+</div>
+<div class="fccApps">
+<a class="alzaico-apple" href="https://apps.apple.com/cz/app/alza/id582287621?l=cs" onclick="_gaq.push(['_trackEvent', 'paticka', 'iosapp', 'Alza.cz']);" rel="nofollow noopener noreferrer" target="_blank" title="Aplikace Alza.cz na App Store">&nbsp;</a>
+<a class="alzaico-android" href="https://play.google.com/store/apps/details?id=cz.alza.eshop&amp;feature=search_result#?t=W251bGwsMSwyLDEsImN6LmFsemEuZXNob3AiXQ.." onclick="_gaq.push(['_trackEvent', 'paticka', 'androidapp', 'Alza.cz']);" rel="nofollow noopener noreferrer" target="_blank" title="Aplikace Alza.cz na Google play">&nbsp;</a>
+<a class="alzaico-mobile" href="javascript:setMobileApp(2);" onclick="_gaq.push(['_trackEvent', 'paticka', 'mobileweb', 'Alza.cz']);" title="Přepnutí na mobilní verzi Alza.cz">&nbsp;</a>
+<a class="alzaico-facebook" href="https://www.facebook.com/alza.cz/" onclick="_gaq.push(['_trackEvent', 'paticka', 'Facebook', 'Alza.cz']);" rel="nofollow noopener noreferrer" target="_blank" title="Sledujte nás na sociální síti Facebook">&nbsp;</a>
+<a class="alzaico-instagram" href="https://www.instagram.com/alza_czsk/" onclick="_gaq.push(['_trackEvent', 'paticka', 'Instagram', 'Alza.cz']);" rel="nofollow noopener noreferrer" target="_blank" title="Sledujte nás na Instagramu">&nbsp;</a>
+<a class="alzaico-youtube" href="https://www.youtube.com/channel/UC0wtqzWrBA5gL4Jr_QIQTgg" onclick="_gaq.push(['_trackEvent', 'paticka', 'YouTube', 'Alza.cz']);" rel="nofollow noopener noreferrer" target="_blank" title="Sledujte nás na YouTube">&nbsp;</a>
+<a class="alzaico-twitter" href="https://twitter.com/Alzacz" onclick="_gaq.push(['_trackEvent', 'paticka', 'Twitter', 'Alza.cz']);" rel="nofollow noopener noreferrer" target="_blank" title="Sledujte nás na Twitteru">&nbsp;</a>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<script type="text/javascript" src="https://cdn.alza.cz/dist/b/defaultDialogs-774d8ed15a.min.js" async=""></script>
+<script type="text/javascript" src="https://cdn.alza.cz/dist/b/asyncScripts-a0221dba6d.min.js" async=""></script>
+<script type="text/javascript" src="https://cdn.alza.cz/dist/b/default-cb72b21a24.min.js"></script>
+<script type="text/javascript" src="https://cdn.alza.cz/dist/b/order1-a9d94691e7.min.js"></script>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8N2RL"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>$(window).load(function(){setTimeout(function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-K8N2RL')},1000);})</script>
+
+<div class="servername">P-DC1-WEB08</div>
+<div class="chat-wrapper opened" id="chat-wrapper">
+<div class="chat-content-wrapper vendor-wrapper" id="vendor-wrapper" style="display: block;">
+<div class="loading-cover"></div>
+<div class="shadow-layer"></div>
+<div class="inner-wrapper">
+<div class="vendor-close fa fa-times" id="vendor-close">
+</div>
+<div class="dialog">
+<div class="dialog-title">
+<span>Váš osobní asistent</span>
+</div>
+<div class="dialog-image-wrapper" id="vendor-image-wrapper">
+<img id="vendor-team-image" src="https://cdn.alza.cz/Foto/Jean/Image/VendorTeam/157/637607265835301649.png"></div>
+<div class="dialog-description">
+<div class="dialog-description-title" id="vendor-description-title">Můžeme Vám poradit?</div>
+</div>
+<div class="dialog-image-wrapper-bottom" id="vendor-logo-wrapper">
+<img id="vendor-logo" src="https://cdn.alza.cz/Foto/Jean/Image/VendorTeam/Logos/157/637607266078219358.png"></div>
+</div>
+<div class="bottom-buttons center">
+<div class="button send-message" id="ask-chat">
+<div class="icon"></div>
+<span>Napsat dotaz</span>
+</div>
+<div class="button call-me" id="call-me-button" style="display: none;">
+<div class="icon"></div>
+<span>Zavolejte mi</span>
+</div>
+</div>
+</div>
+<div class="arrow-down"></div>
+</div>
+<div class="chat-content-wrapper conversation-list-wrapper" id="conversation-list-wrapper" style="display: none;">
+<div class="loading-cover"></div>
+<div class="shadow-layer"></div>
+<div class="inner-wrapper">
+<div class="scroll-wrapper conversation-list scrollbar-inner" style="position: relative;"><div id="conversation-list" class="conversation-list scrollbar-inner scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 0px;"></div><div class="scroll-element scroll-x" style=""><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y" style=""><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div></div>
+<div class="conversation-list-actions">
+<span class="create-conversation-action" id="create-conversation">Nová konverzace</span>
+</div>
+</div>
+<div class="arrow-down"></div>
+</div>
+<div class="chat-content-wrapper conversation-detail-wrapper" id="conversation-detail-wrapper" style="display: none;">
+<div class="loading-cover"></div>
+<div class="shadow-layer"></div>
+<div class="inner-wrapper">
+<div class="conversation-header-wrapper">
+<div id="chat-back-button" class="chat-back-button"><i class="fa fa-arrow-left"></i></div>
+<div id="conversation-vendor-info" class="conversation-vendor-info pull-left">
+<div id="expert-image-wrapper" class="expert-image-wrapper"><img id="expert-image"></div>
+<div class="column-wrapper">
+<div id="expert-type" class="expert-type"></div>
+<div id="expert-name" class="expert-name"></div>
+</div>
+</div>
+<div id="close-conversation" class="close-conversation"><i class="fa fa-times"></i></div>
+</div>
+<div id="chat-inner-wrapper" class="chat-inner-wrapper">
+<div id="conversation-wrapper" class="conversation-wrapper">
+<div class="scroll-wrapper conversation-message-wrapper conversation scrollbar-inner" style="position: relative;"><div id="conversation-messages-wrapper" class="conversation-message-wrapper conversation scrollbar-inner scroll-content" style="height: 390px; margin-bottom: 0px; margin-right: 0px; max-height: none;">
+</div><div class="scroll-element scroll-x" style=""><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div><div class="scroll-element scroll-y" style=""><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar"></div></div></div></div>
+</div><div id="connection-lost-wrapper" class="connection-lost-wrapper" style="display: none;"><div class="connection-lost-inner"><div class="connection-text-wrapper">Jste offline</div><div id="connection-reconnect-button" class="connection-reconnect-button"><i class="fa fa-refresh"></i></div></div></div>
+<div id="conversation-detail-form-wrapper" class="form-wrapper">
+<div class="message-wrapper">
+<textarea id="message-text" class="message-text placeholder" placeholder="Napište svou zprávu..." rows="1"></textarea>
+<div class="message-control">
+<div id="send-message-button" class="send-message-button"></div>
+</div>
+</div>
+</div>
+<div id="rating-wrapper" class="rating-wrapper"><div id="emoticon-wrapper" class="emoticon-wrapper"><div class="emoticon-title">Jak jste byli s operátorem spokojeni?</div><div class="emoticon-icon-wrapper"><div id="rating-1" class="emoticon emoticon-1"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="rating-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="jean-rating-1" transform="translate(-42.000000, -336.000000)">
+								<g id="unselected-01-great" transform="translate(32.000000, 326.000000)">
+									<g id="001-happy" transform="translate(10.526316, 10.526316)">
+										<circle id="BackgroundFill" fill="#F4F5F5" cx="14.4716078" cy="14.4716078" r="14.4716078"></circle>
+										<circle id="LeftEye" fill="#A4A4A4" cx="10.0728292" cy="9.48007995" r="2.27279591"></circle>
+										<circle id="RightEye" fill="#A4A4A4" cx="18.6672052" cy="9.48007995" r="2.27279591"></circle>
+										<path id="Smile" d="M4.97058072,14.4811959 C4.97058072,19.7278148 9.22407284,23.9813069 14.4706918,23.9813069 C19.717555,23.9813069 23.9710471,19.7278148 23.9710471,14.4811959 L4.97058072,14.4811959 L4.97058072,14.4811959 Z" fill="#A4A4A4"></path>										
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg></div><div id="rating-2" class="emoticon emoticon-2"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="rating-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="jean-rating-2" transform="translate(-104.000000, -336.000000)">
+									<g id="unselected-02-good" transform="translate(94.000000, 326.000000)">
+										<g id="002-smiling" transform="translate(10.526316, 10.526316)">
+											<circle id="BackgroundFill" fill="#F4F5F5" cx="14.4716689" cy="14.4716689" r="14.4716689"></circle>											
+											<g id="Group" transform="translate(6.900955, 7.206307)" fill="#A4A4A4">
+												<circle id="LeftEye" cx="3.17187431" cy="2.27377304" r="2.27279591"></circle>
+												<circle id="RightEye" cx="11.7662503" cy="2.27377304" r="2.27279591"></circle>
+												<path id="Smile" d="M14.0618865,12.1445814 C10.4415723,15.8288974 4.61655563,15.799889 1.02641017,12.0897402 C0.513418832,11.5593438 -0.293687542,12.3682823 0.218632023,12.8975183 C4.235171,17.0484732 10.8232012,17.0710693 14.8697257,12.9523595 C15.3863202,12.4265434 14.5787864,11.6183378 14.0618865,12.1445814 L14.0618865,12.1445814 Z"></path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg></div><div id="rating-3" class="emoticon emoticon-3"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="rating-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="jean-rating-3" transform="translate(-166.000000, -336.000000)">
+									<g id="unselected-03-neutral" transform="translate(156.000000, 326.000000)">
+										<g id="003-confused" transform="translate(10.526316, 10.526316)">
+											<circle id="BackgroundFill" fill="#F4F5F5" cx="14.4716078" cy="14.4716078" r="14.4716078"></circle>
+											<g id="Group" transform="translate(5.862758, 8.083500)" fill="#A4A4A4">
+												<circle id="LeftEye" cx="4.21000999" cy="2.27371197" r="2.27279591"></circle>
+												<circle id="RightEye" cx="12.8042638" cy="2.27371197" r="2.27279591"></circle>
+												<path id="Smile" d="M0.566611148,11.8609316 C5.84223851,11.8609316 11.1181101,11.8609316 16.3937375,11.8609316 C17.130674,11.8609316 17.130674,10.7183655 16.3937375,10.7183655 C11.1181101,10.7183655 5.84223851,10.7183655 0.566611148,10.7183655 C-0.170325339,10.7183655 -0.170325339,11.8609316 0.566611148,11.8609316 L0.566611148,11.8609316 Z"></path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg></div><div id="rating-4" class="emoticon emoticon-4"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="rating-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="jean-rating-4" transform="translate(-227.000000, -336.000000)">
+									<g id="unselected-04-bad" transform="translate(217.000000, 326.000000)">
+										<g id="005-suspicious" transform="translate(10.526316, 10.526316)">
+											<circle id="BackgroundFill" fill="#F4F5F5" cx="14.4716689" cy="14.4716689" r="14.4716689"></circle>
+											<g id="Group" transform="translate(7.456140, 8.644237)" fill="#A4A4A4">
+												<circle id="LeftEye" cx="2.61668887" cy="2.28154564" r="2.27279591"></circle>
+												<circle id="RightEye" cx="11.6977959" cy="2.28154564" r="2.27279591"></circle>
+												<path id="Smile" d="M11.7693871,13.3591883 C12.5032014,13.5697282 12.8055053,12.4647828 12.0733344,12.2572951 C9.58117366,11.5510493 5.21242586,10.3855561 2.87729847,9.74291583 C2.13161542,9.53769966 1.87360648,10.6233678 2.5733511,10.844809 C4.98974187,11.5510493 9.34284407,12.6629848 11.7693871,13.3591883 Z"></path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg></div><div id="rating-5" class="emoticon emoticon-5"><svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="rating-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="jean-rating-5" transform="translate(-289.000000, -336.000000)">
+									<g id="unselected-05-angry" transform="translate(279.000000, 326.000000)">
+										<g id="004-mad" transform="translate(10.526316, 10.526316)">
+											<circle id="BackgroundFill" fill="#F4F5F5" cx="14.4716689" cy="14.4716689" r="14.4716689"></circle>
+											<g id="Group" transform="translate(6.900955, 9.232734)" fill="#A4A4A4">												
+												<circle id="LeftEye" cx="3.17187431" cy="2.5333944" r="2.27279591"></circle>
+												<circle id="RightEye" cx="11.7662503" cy="2.5333944" r="2.27279591"></circle>
+												<path id="Smile" d="M14.9205974,12.4350433 C10.8848212,8.26448479 4.25385854,8.264668 0.218326671,12.4354708 C-0.293992894,12.9647069 0.51311348,13.7736453 1.02610482,13.2432489 C4.63774706,9.51074839 10.5009327,9.51050411 14.1127582,13.2428215 C14.6258106,13.7729736 15.4331612,12.9642794 14.9205974,12.4350433 L14.9205974,12.4350433 Z"></path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg></div></div></div><div id="tags-wrapper" class="tags-wrapper"><div class="tags-title">Co vás nadchlo?</div><div class="tags-options-wrapper"></div><div class="tags-title"></div></div><div id="buttons-wrapper" class="buttons-wrapper"><div id="cancel-rating" class="cancel-rating rating-button">Zrušit</div><div id="send-rating" class="send-rating rating-button">Odeslat hodnocení</div></div></div>
+</div>
+</div>
+<div class="arrow-down"></div>
+</div>
+<div class="chat-icon open-chat close" id="chat-open-button">
+<i class="fa fa-arrow-left"></i>
+<i class="fa fa-times"></i>
+</div>
+</div>
+<div class="call-me-popup phone" id="call-me-popup">
+<div id="call-me-inner" class="call-me-inner">
+<span class="header">Zavoláme Vám a odborně poradíme</span>
+<span id="ctl19_title" class="subtitle"></span>
+<div class="close"></div>
+<div class="select-container">
+<div id="order-box" class="call-me-box order">
+<div class="image">
+<img id="order-image-logo" src="/img/blank.gif">
+</div>
+<div class="phone">
+<span class="icon fa fa-phone"></span>
+<span>+420 225 340 111</span>
+</div>
+<span class="box-name">Dotaz na objednávku</span>
+</div>
+<div id="product-box" class="call-me-box product selected">
+<div class="image">
+<img id="product-image-logo" src="/img/blank.gif">
+</div>
+<div class="phone">
+<span class="icon fa fa-phone"></span>
+<span></span>
+</div>
+<span class="box-name">Dotaz na zboží</span>
+</div>
+</div>
+<div class="buttons">
+<div class="phone-form">
+<span class="phone-label">Prosím zadejte svůj telefon:</span>
+<input type="text" id="phone-number-input">
+</div>
+<span class="btnx normal green disabled" id="call-me-popup-button">Zavolejte mi</span>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	// FB script
+	function initFB()
+	{
+	  var fbInit = setTimeout(function () { initFBJS(document, 'script', 'facebook-jssdk'); }, 3000);
+	}
+
+	function initFBJS(d, s, id)
+	{
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.async = true; js.src = _fbConnectUrl;
+	  fjs.parentNode.insertBefore(js, fjs);
+
+	  window.fbAsyncInit = function ()
+	  {
+		FB.init({
+		  appId: _fbConnectId,
+		  status: true,
+		  xfbml: true,
+		  cookie: true
+		});
+	  };
+	}
+
+    initFB();
+
+	</script>
+<alza-component-body>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;72983715d9f3b38c&quot;,&quot;token&quot;:&quot;d35820ab4edb46d682570ebb9b7d3cf4&quot;,&quot;version&quot;:&quot;2022.6.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+</alza-component-body></alza-component-head><iframe src="https://pay.google.com/gp/p/ui/payframe?origin=https%3A%2F%2Fwww.alza.cz&amp;mid=" height="0" width="0" allowpaymentrequest="true" style="display: none; visibility: hidden;"></iframe><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div class="bug-report-overlay"></div><div class="bug-report-overlay"></div><div class="bug-report-overlay"></div><div class="bug-report-overlay"></div><div class="bug-report-overlay"></div><div class="bug-report-overlay"></div><div class="bug-report-overlay"></div><div class="bug-report-overlay"></div><div id="FE_LOADER"></div><div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"><div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div></div>
+<script type="text/javascript" id="" src="//static.criteo.net/js/ld/ld.js"></script><script type="text/javascript" id="">var cookieExist=google_tag_manager["GTM-K8N2RL"].macro(91);
+if(void 0===cookieExist&&"loggedOut"!=google_tag_manager["GTM-K8N2RL"].macro(92)&&void 0!=google_tag_manager["GTM-K8N2RL"].macro(93)){var cookieName="crto-gdn-rtbh",cookieValue=google_tag_manager["GTM-K8N2RL"].macro(94),expirationTime=15552E3;expirationTime*=1E3;var date=new Date,dateTimeNow=date.getTime();date.setTime(dateTimeNow+expirationTime);expirationTime=date.toUTCString();document.cookie=cookieName+"\x3d"+cookieValue+"; expires\x3d"+expirationTime+"; path\x3d/; domain\x3d."+location.hostname.replace(/^www\./i,"")}else"undefined"===cookieExist&&"loggedOut"!=
+google_tag_manager["GTM-K8N2RL"].macro(95)&&void 0!=google_tag_manager["GTM-K8N2RL"].macro(96)&&(cookieName="crto-gdn-rtbh",cookieValue=google_tag_manager["GTM-K8N2RL"].macro(97),expirationTime=15552E3,expirationTime*=1E3,date=new Date,dateTimeNow=date.getTime(),date.setTime(dateTimeNow+expirationTime),expirationTime=date.toUTCString(),document.cookie=cookieName+"\x3d"+cookieValue+"; expires\x3d"+expirationTime+"; path\x3d/; domain\x3d."+location.hostname.replace(/^www\./i,""));</script><script type="text/javascript" id="" src="https://alzacz.app.baqend.com/v1/speedkit/install.js?d=production">
+</script><script type="text/javascript" id="">try{(function(){var c="",e=google_tag_manager["GTM-K8N2RL"].macro(240),f=[];f.push("pr_"+e+"_basketstatus_ADC253z10i");var g="__rtbhouse.lid",b=window.localStorage.getItem(g);if(!b){b="";for(var h="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",d=0;20>d;d++)b+=h.charAt(Math.floor(Math.random()*h.length));window.localStorage.setItem(g,b)}f.push("pr_"+e+"_lid_"+b);var a=document.createElement("iframe");e=encodeURIComponent(document.referrer?document.referrer:"");g=encodeURIComponent(document.location.href?
+document.location.href:"");c="https://"+c+"creativecdn.com/tags?type\x3diframe";b=encodeURIComponent(""+Date.now());for(d=0;d<f.length;d++)c+="\x26id\x3d"+encodeURIComponent(f[d]);c+="\x26su\x3d"+g+"\x26sr\x3d"+e+"\x26ts\x3d"+b;a.setAttribute("src",c);a.setAttribute("width","1");a.setAttribute("height","1");a.setAttribute("scrolling","no");a.setAttribute("frameBorder","0");a.setAttribute("style","display:none");a.setAttribute("referrerpolicy","no-referrer-when-downgrade");document.body?document.body.appendChild(a):
+window.addEventListener("DOMContentLoaded",function(){document.body.appendChild(a)})})()}catch(c){};</script><iframe src="https://creativecdn.com/tags?type=iframe&amp;id=pr_NAuaYyUeDghewwnOxBy4_basketstatus_ADC253z10i&amp;id=pr_NAuaYyUeDghewwnOxBy4_lid_Xu6swUpkMPv7kPn8awQT&amp;su=https%3A%2F%2Fwww.alza.cz%2FOrder1.htm&amp;sr=https%3A%2F%2Fwww.alza.cz%2FCrossSell.htm%3Fid%3D402246518%26pkitem%3D6778383%26count%3D1&amp;ts=1657612558876" width="1" height="1" scrolling="no" frameborder="0" style="display:none" referrerpolicy="no-referrer-when-downgrade"></iframe><script type="text/javascript" id="">(function(){try{window.setTimeout(function(){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:"afterLoad"})},1687)}catch(a){}})();</script><script type="text/javascript" id="" src="https://scripts.luigisbox.com/LBX-239813.js"></script>
+<script type="text/javascript" id="">window.criteo_q=window.criteo_q||[];window.criteo_q.push({event:"setAccount",account:google_tag_manager["GTM-K8N2RL"].macro(73)},{event:"setEmail",email:google_tag_manager["GTM-K8N2RL"].macro(74)},{event:"setSiteType",type:google_tag_manager["GTM-K8N2RL"].macro(75)},{event:"viewBasket",tms:"gtm-criteo-2.0.0",item:google_tag_manager["GTM-K8N2RL"].macro(77)});</script>
+<div id="criteo-tags-div" style="display: none;"><iframe src="https://gum.criteo.com/syncframe?topUrl=www.alza.cz&amp;origin=onetag#{&quot;bundle&quot;:{&quot;origin&quot;:3,&quot;value&quot;:&quot;6pB5Ml9tQVdTRWJOT0o5VGNLQ3k1UEkyOGkydEFScTdrJTJGcTNvcFdoY1pSalZpT0V1YWlacE02VUFZNnF4QWw0ODBjYUtWbTVxZzUlMkYlMkJGdnhGZlFPZlVhT0IwU1V4dkx3VUNaVzBKZEpWJTJCcElCQkttd3NDTHRmbzhOemhnUkpHNVRISTMlMkI0VzhKak54OFlTd1prM0s3Y1laT0d3JTNEJTNE&quot;},&quot;cw&quot;:true,&quot;optout&quot;:{&quot;origin&quot;:0,&quot;value&quot;:null},&quot;origin&quot;:&quot;onetag&quot;,&quot;pm&quot;:0,&quot;sid&quot;:{&quot;origin&quot;:0,&quot;value&quot;:null},&quot;tld&quot;:&quot;alza.cz&quot;,&quot;topUrl&quot;:&quot;www.alza.cz&quot;,&quot;version&quot;:&quot;5_11_0&quot;,&quot;ifa&quot;:{&quot;origin&quot;:0,&quot;value&quot;:null},&quot;lsw&quot;:true}" id="criteo-syncframe-onetag" width="0" height="0" frameborder="0" style="border-width:0px; margin:0px; display:none" title="Criteo GUM iframe"></iframe></div><iframe height="0" width="0" title="Criteo DIS iframe" style="display: none;"></iframe></body></html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Parallel_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Parallel Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Parallel_Suite" class="navigator-link ">
+                    <span>C:\Projects\selenium\003_automation\01_origin\src\test\resources\testsets\default.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Parallel_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Parallel_Suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Parallel_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Parallel_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Parallel_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Parallel_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parallel_Suite" class="hide-methods failed suite-Parallel_Suite"> (hide)</a> <!-- hide-methods failed suite-Parallel_Suite -->
+                      <a href="#" panel-name="suite-Parallel_Suite" class="show-methods failed suite-Parallel_Suite"> (show)</a> <!-- show-methods failed suite-Parallel_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Parallel_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="automation.demo.tests.web.alza.shoppingcart.TC_02" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="automation.demo.tests.web.alza.shoppingcart.TC_03" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="automation.demo.tests.web.alza.shoppingcart.TC_01b" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Parallel_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Parallel_Suite" class="hide-methods passed suite-Parallel_Suite"> (hide)</a> <!-- hide-methods passed suite-Parallel_Suite -->
+                      <a href="#" panel-name="suite-Parallel_Suite" class="show-methods passed suite-Parallel_Suite"> (show)</a> <!-- show-methods passed suite-Parallel_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Parallel_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="automation.demo.tests.web.alza.shoppingcart.TC_01" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Suite" title="automation.demo.tests.web.alza.login.TC_04" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Parallel_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Parallel_Suite" class="panel Parallel_Suite">
+          <div class="suite-Parallel_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">automation.demo.tests.web.alza.shoppingcart.TC_02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.&lt;init&gt;(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.&lt;init&gt;(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.&lt;init&gt;(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_02.test(TC_02.java:18)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.lang.RuntimeException: Expected [count|price] : [1|26590,000000]. Received : [1|18990,000000]
+		at automation.demo.objects.web.alza.components.buttons.ShoppingCartButton.checkValues(ShoppingCartButton.java:39)
+		at automation.demo.objects.web.alza.page_sections.HeaderPageSection.checkShoppingCartButtonValues(HeaderPageSection.java:50)
+		at automation.demo.objects.web.alza.CategoryPage.checkShoppingCartButtonValues(CategoryPage.java:53)
+		at automation.demo.tests.web.alza.shoppingcart.TC_02.test(TC_02.java:34)
+		... 13 more
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-failed -->
+          <div class="suite-Parallel_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">automation.demo.tests.web.alza.shoppingcart.TC_01b</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.&lt;init&gt;(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.&lt;init&gt;(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.&lt;init&gt;(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_01b.test(TC_01b.java:17)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.lang.RuntimeException: Shopping cart is not empty
+		at automation.demo.objects.web.alza.pages.ShoppingCartPage.assertEmptyShoppingCart(ShoppingCartPage.java:41)
+		at automation.demo.tests.web.alza.shoppingcart.TC_01b.test(TC_01b.java:35)
+		... 13 more
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-failed -->
+          <div class="suite-Parallel_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">automation.demo.tests.web.alza.shoppingcart.TC_03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.&lt;init&gt;(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.&lt;init&gt;(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.&lt;init&gt;(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_03.test(TC_03.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;DESKTOP-I9ETKPH&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3a51f0bd3417aa5b9cb53c6a11f9f86, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\miros\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64216/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d3a51f0bd3417aa5b9cb53c6a11f9f86
+		at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+		at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+		at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+		at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:372)
+		at automation.demo.driver.driver.DriverManager.takeScreenshot(DriverManager.java:59)
+		at automation.demo.driver.listeners.WebTestListener.onTestFailure(WebTestListener.java:16)
+		... 9 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-failed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automation.demo.tests.web.alza.shoppingcart.TC_01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+          <div class="suite-Parallel_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automation.demo.tests.web.alza.login.TC_04</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_Suite-class-passed -->
+        </div> <!-- panel Parallel_Suite -->
+        <div panel-name="test-xml-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Projects\selenium\003_automation\01_origin\src\test\resources\testsets\default.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Parallel Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;include name=&quot;alternative&quot;/&gt;
+      &lt;include name=&quot;negative&quot;/&gt;
+      &lt;include name=&quot;ui&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;All tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;automation.demo.tests.web.*&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;automation.demo.tests.web.alza.login.TC_04&quot;/&gt;
+      &lt;class name=&quot;automation.demo.tests.web.alza.shoppingcart.TC_01&quot;/&gt;
+      &lt;class name=&quot;automation.demo.tests.web.alza.shoppingcart.TC_01b&quot;/&gt;
+      &lt;class name=&quot;automation.demo.tests.web.alza.shoppingcart.TC_02&quot;/&gt;
+      &lt;class name=&quot;automation.demo.tests.web.alza.shoppingcart.TC_03&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- All tests --&gt;
+&lt;/suite&gt; &lt;!-- Parallel Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Parallel Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">All tests (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Parallel Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">basket</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Parallel Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Parallel_Suite');
+function tableData_Parallel_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test')
+data.setCell(0, 2, 'automation.demo.tests.web.alza.shoppingcart.TC_01b')
+data.setCell(0, 3, 26409);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test')
+data.setCell(1, 2, 'automation.demo.tests.web.alza.shoppingcart.TC_02')
+data.setCell(1, 3, 23488);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test')
+data.setCell(2, 2, 'automation.demo.tests.web.alza.login.TC_04')
+data.setCell(2, 3, 22722);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test')
+data.setCell(3, 2, 'automation.demo.tests.web.alza.shoppingcart.TC_03')
+data.setCell(3, 3, 22574);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test')
+data.setCell(4, 2, 'automation.demo.tests.web.alza.shoppingcart.TC_01')
+data.setCell(4, 3, 16796);
+window.suiteTableData['Parallel_Suite']= { tableData: data, tableDiv: 'times-div-Parallel_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Parallel_Suite">
+              </div> <!-- times-div-Parallel_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Parallel Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automation.demo.tests.web.alza.shoppingcart.TC_02</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">resetAll</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automation.demo.tests.web.alza.shoppingcart.TC_01</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">resetAll</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automation.demo.tests.web.alza.shoppingcart.TC_01b</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">resetAll</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automation.demo.tests.web.alza.shoppingcart.TC_03</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">resetAll</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Parallel_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation.demo.tests.web.alza.login.TC_04</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">reset</span>
+                <span class="method-start">22725 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation.demo.tests.web.alza.shoppingcart.TC_01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">23517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">reset</span>
+                <span class="method-start">40313 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation.demo.tests.web.alza.shoppingcart.TC_01b</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test</span>
+                <span class="method-start">41255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">reset</span>
+                <span class="method-start">70006 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation.demo.tests.web.alza.shoppingcart.TC_02</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test</span>
+                <span class="method-start">70905 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">reset</span>
+                <span class="method-start">95515 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation.demo.tests.web.alza.shoppingcart.TC_03</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test</span>
+                <span class="method-start">96398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">reset</span>
+                <span class="method-start">123566 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automation.demo.tests.web.alza.login.TC_04</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">resetAll</span>
+                <span class="method-start">124529 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

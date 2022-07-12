@@ -1,0 +1,40 @@
+Example of bug-report
+    Expected that bug management system adds:
+        - date of creation
+        - author 
+        - bug initial state
+
+
+Version: <alza website build>
+Language: CZ
+Locales: <if available>
+
+Where:
+    - TC (automated): TC_02
+    - Catalog Page - table of items 
+
+Error description: 
+    - Wrong price for item. Wrong discount price calculation. 
+
+
+Steps:
+    - GIVEN The user sees website on HomePage.
+    - AND The user is not logged in
+    - AND The cookies are in initial state 
+    - WHEN The user find value "Dell Vostro 3510"
+    - THEN The website shows Catalog page with table of available items
+    - WHEN The user clicks on buy button on '4' item
+    - THEN The website shows CrossSell page
+    - AND The Shopping cart button change count to one
+    Expected:
+        - AND The Shopping cart button change price to 26590
+    Actual:
+        - AND The Shopping cart button change price to 18990
+
+See attachments for:
+    - collected by automated test framework
+        - screenshot of CrossSell page
+        - video from test run
+        - test run log
+        - CrossSell page source code
+    - application log

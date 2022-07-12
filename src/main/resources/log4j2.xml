@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%-5level] %msg%n%throwable"/>
+        </Console>
+        <File name="File" fileName="logs/test.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%-5level] %msg%n%throwable"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="DEBUG" includeLocation="false">
+            <!-- AppenderRef ref="Console"/ -->
+            <AppenderRef ref="File"/>
+        </Root>
+        <Logger name="io.netty.handler.logging.LoggingHandler" level="OFF" />
+        <Logger name="org.asynchttpclient.netty.handler.HttpHandler" level="OFF" />
+        <Logger name="org.asynchttpclient.netty.channel.ChannelManager" level="OFF" />
+        <Logger name="org.asynchttpclient.netty.handler.WebSocketHandler" level="OFF" />
+        <Logger name="org.asynchttpclient.netty.channel.DefaultChannelPool" level="OFF" />
+        <Logger name="org.asynchttpclient.netty.request.NettyRequestSender" level="OFF" />
+        <Logger name="io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder" level="OFF" />
+        <Logger name="io.netty" level="OFF" />
+    </Loggers>
+</Configuration>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="125.3" tests="5" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="applicationType" value="WEB"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="webdriver.chrome.driver" value="c:\Projects\selenium\003_automation\01_origin\drivers\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.class.path" value="c:\Projects\selenium\003_automation\01_origin\target\test-classes;c:\Projects\selenium\003_automation\01_origin\target\classes;C:\Users\miros\.m2\repository\io\appium\java-client\8.1.1\java-client-8.1.1.jar;C:\Users\miros\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\miros\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\miros\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\miros\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\miros\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\miros\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\miros\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\miros\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\miros\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\miros\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\miros\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\miros\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\miros\.m2\repository\org\aspectj\aspectjrt\1.9.6\aspectjrt-1.9.6.jar;C:\Users\miros\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\miros\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.13.0\log4j-slf4j-impl-2.13.0.jar;C:\Users\miros\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\miros\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.0\log4j-core-2.13.0.jar;C:\Users\miros\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\miros\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\miros\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\miros\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\miros\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\miros\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\miros\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\miros\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\miros\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\miros\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-java\4.2.2\selenium-java-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.2.2\selenium-chrome-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.2.2\selenium-chromium-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v100\4.2.2\selenium-devtools-v100-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.2.2\selenium-devtools-v101-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.2.2\selenium-devtools-v102-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.2.2\selenium-devtools-v85-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.2.2\selenium-edge-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.2.2\selenium-firefox-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.2.2\selenium-ie-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.2.2\selenium-opera-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.2.2\selenium-safari-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-support\4.2.2\selenium-support-4.2.2.jar;C:\Users\miros\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\miros\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\miros\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\miros\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\miros\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\miros\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\miros\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\miros\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\miros\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\miros\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\miros\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-json\4.2.2\selenium-json-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-api\4.2.2\selenium-api-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-http\4.2.2\selenium-http-4.2.2.jar;C:\Users\miros\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.2.2\selenium-remote-driver-4.2.2.jar;C:\Users\miros\.m2\repository\io\netty\netty-buffer\4.1.77.Final\netty-buffer-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-codec-http\4.1.77.Final\netty-codec-http-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-codec\4.1.77.Final\netty-codec-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-handler\4.1.77.Final\netty-handler-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-common\4.1.77.Final\netty-common-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.77.Final\netty-transport-classes-epoll-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.77.Final\netty-transport-classes-kqueue-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-epoll\4.1.77.Final\netty-transport-native-epoll-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.77.Final\netty-transport-native-kqueue-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.77.Final\netty-transport-native-unix-common-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport\4.1.77.Final\netty-transport-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-resolver\4.1.77.Final\netty-resolver-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-api\1.14.0\opentelemetry-api-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-context\1.14.0\opentelemetry-context-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.14.0\opentelemetry-exporter-logging-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.14.0\opentelemetry-sdk-metrics-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.14.0-alpha\opentelemetry-sdk-logs-1.14.0-alpha.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.14.0\opentelemetry-sdk-common-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.14.0\opentelemetry-sdk-extension-autoconfigure-spi-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.14.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.14.0-alpha.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.14.0\opentelemetry-sdk-trace-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.14.0\opentelemetry-sdk-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.14.0-alpha\opentelemetry-semconv-1.14.0-alpha.jar;C:\Users\miros\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\miros\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\miros\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\miros\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\miros\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\miros\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\miros\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\miros\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\miros\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\miros\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\miros\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\miros\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.1\jaxb-impl-2.3.1.jar;C:\Users\miros\.m2\repository\com\github\stephenc\monte\monte-screen-recorder\0.7.7.0\monte-screen-recorder-0.7.7.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Prague"/>
+    <property name="org.apache.logging.log4j.assignedSequences" value="11567"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CZ"/>
+    <property name="sun.boot.library.path" value="C:\Users\miros\.jdks\openjdk-18.0.1.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\miros\AppData\Local\Temp\surefire17947887662847929393\surefirebooter13203180926272264407.jar C:\Users\miros\AppData\Local\Temp\surefire17947887662847929393 2022-07-12T09-54-48_539-jvmRun1 surefire7913943923441307124tmp surefire_02014266276980538438tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="c:\Projects\selenium\003_automation\01_origin\target\test-classes;c:\Projects\selenium\003_automation\01_origin\target\classes;C:\Users\miros\.m2\repository\io\appium\java-client\8.1.1\java-client-8.1.1.jar;C:\Users\miros\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\miros\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\miros\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\miros\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\miros\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\miros\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\miros\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\miros\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\miros\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\miros\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\miros\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\miros\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\miros\.m2\repository\org\aspectj\aspectjrt\1.9.6\aspectjrt-1.9.6.jar;C:\Users\miros\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\miros\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.13.0\log4j-slf4j-impl-2.13.0.jar;C:\Users\miros\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\miros\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.0\log4j-core-2.13.0.jar;C:\Users\miros\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\miros\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\miros\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\miros\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\miros\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\miros\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\miros\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\miros\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\miros\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\miros\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-java\4.2.2\selenium-java-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.2.2\selenium-chrome-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.2.2\selenium-chromium-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v100\4.2.2\selenium-devtools-v100-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.2.2\selenium-devtools-v101-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.2.2\selenium-devtools-v102-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.2.2\selenium-devtools-v85-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.2.2\selenium-edge-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.2.2\selenium-firefox-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.2.2\selenium-ie-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.2.2\selenium-opera-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.2.2\selenium-safari-driver-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-support\4.2.2\selenium-support-4.2.2.jar;C:\Users\miros\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\miros\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\miros\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\miros\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\miros\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\miros\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\miros\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\miros\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\miros\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\miros\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\miros\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-json\4.2.2\selenium-json-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-api\4.2.2\selenium-api-4.2.2.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-http\4.2.2\selenium-http-4.2.2.jar;C:\Users\miros\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\miros\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.2.2\selenium-remote-driver-4.2.2.jar;C:\Users\miros\.m2\repository\io\netty\netty-buffer\4.1.77.Final\netty-buffer-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-codec-http\4.1.77.Final\netty-codec-http-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-codec\4.1.77.Final\netty-codec-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-handler\4.1.77.Final\netty-handler-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-common\4.1.77.Final\netty-common-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.77.Final\netty-transport-classes-epoll-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.77.Final\netty-transport-classes-kqueue-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-epoll\4.1.77.Final\netty-transport-native-epoll-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.77.Final\netty-transport-native-kqueue-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.77.Final\netty-transport-native-unix-common-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport\4.1.77.Final\netty-transport-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-resolver\4.1.77.Final\netty-resolver-4.1.77.Final.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-api\1.14.0\opentelemetry-api-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-context\1.14.0\opentelemetry-context-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.14.0\opentelemetry-exporter-logging-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.14.0\opentelemetry-sdk-metrics-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.14.0-alpha\opentelemetry-sdk-logs-1.14.0-alpha.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.14.0\opentelemetry-sdk-common-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.14.0\opentelemetry-sdk-extension-autoconfigure-spi-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.14.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.14.0-alpha.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.14.0\opentelemetry-sdk-trace-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.14.0\opentelemetry-sdk-1.14.0.jar;C:\Users\miros\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.14.0-alpha\opentelemetry-semconv-1.14.0-alpha.jar;C:\Users\miros\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\miros\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\miros\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\miros\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\miros\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\miros\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\miros\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\miros\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\miros\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\miros\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\miros\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\miros\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\miros\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.1\jaxb-impl-2.3.1.jar;C:\Users\miros\.m2\repository\com\github\stephenc\monte\monte-screen-recorder\0.7.7.0\monte-screen-recorder-0.7.7.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\miros"/>
+    <property name="user.language" value="cs"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="C:\Users\miros\.jdks\openjdk-18.0.1.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="c:\Projects\selenium\003_automation\01_origin"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\miros\AppData\Local\Temp\surefire17947887662847929393\surefirebooter13203180926272264407.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.1.1+2-6"/>
+    <property name="user.name" value="miros"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="browser" value="chrome"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\miros\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\miros\AppData\Local\Temp\"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="user.dir" value="c:\Projects\selenium\003_automation\01_origin"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="appUrl" value="https://alza.cz"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1250"/>
+    <property name="java.library.path" value="C:\Users\miros\.jdks\openjdk-18.0.1.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;c:\apache-maven\bin\;C:\Users\miros\.jdks\openjdk-18.0.1.1\\bin;C:\Users\miros\AppData\Local\Microsoft\WindowsApps;;C:\Users\miros\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.1.1+2-6"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="test" classname="automation.demo.tests.web.alza.login.TC_04" time="22.71"/>
+  <testcase name="test" classname="automation.demo.tests.web.alza.shoppingcart.TC_01" time="16.796"/>
+  <testcase name="test" classname="automation.demo.tests.web.alza.shoppingcart.TC_01b" time="28.752">
+    <failure message="There were some exceptions found during the test" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.<init>(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.<init>(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.<init>(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_01b.test(TC_01b.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.lang.RuntimeException: Shopping cart is not empty
+		at automation.demo.objects.web.alza.pages.ShoppingCartPage.assertEmptyShoppingCart(ShoppingCartPage.java:41)
+		at automation.demo.tests.web.alza.shoppingcart.TC_01b.test(TC_01b.java:35)
+		... 13 more
+]]></failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 61790
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1657612533.218][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+čvc 12, 2022 9:55:34 DOP. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+čvc 12, 2022 9:55:34 DOP. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: 102
+čvc 12, 2022 9:55:34 DOP. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 103 of 102
+]]></system-err>
+  </testcase>
+  <testcase name="test" classname="automation.demo.tests.web.alza.shoppingcart.TC_02" time="24.61">
+    <failure message="There were some exceptions found during the test" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.<init>(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.<init>(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.<init>(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_02.test(TC_02.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.lang.RuntimeException: Expected [count|price] : [1|26590,000000]. Received : [1|18990,000000]
+		at automation.demo.objects.web.alza.components.buttons.ShoppingCartButton.checkValues(ShoppingCartButton.java:39)
+		at automation.demo.objects.web.alza.page_sections.HeaderPageSection.checkShoppingCartButtonValues(HeaderPageSection.java:50)
+		at automation.demo.objects.web.alza.CategoryPage.checkShoppingCartButtonValues(CategoryPage.java:53)
+		at automation.demo.tests.web.alza.shoppingcart.TC_02.test(TC_02.java:34)
+		... 13 more
+]]></failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 55504
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1657612562.949][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+čvc 12, 2022 9:56:03 DOP. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+čvc 12, 2022 9:56:03 DOP. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: 102
+čvc 12, 2022 9:56:03 DOP. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 103 of 102
+]]></system-err>
+  </testcase>
+  <testcase name="test" classname="automation.demo.tests.web.alza.shoppingcart.TC_03" time="27.169">
+    <failure message="There were some exceptions found during the test" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.<init>(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.<init>(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.<init>(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_03.test(TC_03.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-I9ETKPH', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3a51f0bd3417aa5b9cb53c6a11f9f86, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\miros\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64216/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d3a51f0bd3417aa5b9cb53c6a11f9f86
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+		at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+		at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+		at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+		at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:372)
+		at automation.demo.driver.driver.DriverManager.takeScreenshot(DriverManager.java:59)
+		at automation.demo.driver.listeners.WebTestListener.onTestFailure(WebTestListener.java:16)
+		at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+		at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+		at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
+		... 9 more
+]]></failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 55009
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1657612588.506][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+čvc 12, 2022 9:56:29 DOP. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+čvc 12, 2022 9:56:29 DOP. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 103, so returning the closest version found: 102
+čvc 12, 2022 9:56:29 DOP. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 103 of 102
+]]></system-err>
+  </testcase>
+</testsuite>

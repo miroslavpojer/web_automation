@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="9" passed="2" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-12T09:54:50 SELČ" name="Parallel Suite" finished-at="2022-07-12T09:56:54 SELČ" duration-ms="124514">
+    <groups>
+      <group name="basket">
+        <method signature="TC_01.test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_01@670002]" name="test" class="automation.demo.tests.web.alza.shoppingcart.TC_01"/>
+        <method signature="TC_01b.test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_01b@1f0f1111]" name="test" class="automation.demo.tests.web.alza.shoppingcart.TC_01b"/>
+        <method signature="TC_02.test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_02@49c386c8]" name="test" class="automation.demo.tests.web.alza.shoppingcart.TC_02"/>
+        <method signature="TC_03.test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_03@56528192]" name="test" class="automation.demo.tests.web.alza.shoppingcart.TC_03"/>
+      </group> <!-- basket -->
+      <group name="smoke">
+        <method signature="TC_01.test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_01@670002]" name="test" class="automation.demo.tests.web.alza.shoppingcart.TC_01"/>
+        <method signature="TC_01b.test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_01b@1f0f1111]" name="test" class="automation.demo.tests.web.alza.shoppingcart.TC_01b"/>
+        <method signature="TC_02.test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_02@49c386c8]" name="test" class="automation.demo.tests.web.alza.shoppingcart.TC_02"/>
+        <method signature="TC_03.test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_03@56528192]" name="test" class="automation.demo.tests.web.alza.shoppingcart.TC_03"/>
+        <method signature="TC_04.test()[pri:0, instance:automation.demo.tests.web.alza.login.TC_04@778d1062]" name="test" class="automation.demo.tests.web.alza.login.TC_04"/>
+      </group> <!-- smoke -->
+      <group name="login">
+        <method signature="TC_04.test()[pri:0, instance:automation.demo.tests.web.alza.login.TC_04@778d1062]" name="test" class="automation.demo.tests.web.alza.login.TC_04"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2022-07-12T09:54:50 SELČ" name="All tests" finished-at="2022-07-12T09:56:54 SELČ" duration-ms="124514">
+      <class name="automation.demo.tests.web.alza.shoppingcart.TC_03">
+        <test-method signature="test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_03@56528192]" started-at="2022-07-12T09:56:26 SELČ" name="test" finished-at="2022-07-12T09:56:49 SELČ" duration-ms="22574" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[There were some exceptions found during the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: There were some exceptions found during the test
+at automation.demo.driver.driver.DriverManager.<init>(DriverManager.java:21)
+at automation.demo.driver.driver.web.WebDriver.<init>(WebDriver.java:19)
+at automation.demo.driver.driver.web.Chrome.<init>(Chrome.java:8)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+at automation.demo.tests.web.alza.shoppingcart.TC_03.test(TC_03.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Suppressed: org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-I9ETKPH', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3a51f0bd3417aa5b9cb53c6a11f9f86, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\miros\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64216/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d3a51f0bd3417aa5b9cb53c6a11f9f86
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:372)
+at automation.demo.driver.driver.DriverManager.takeScreenshot(DriverManager.java:59)
+at automation.demo.driver.listeners.WebTestListener.onTestFailure(WebTestListener.java:16)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:96)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:220)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:657)
+... 9 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="reset()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_03@56528192]" started-at="2022-07-12T09:56:53 SELČ" name="reset" finished-at="2022-07-12T09:56:54 SELČ" duration-ms="916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset -->
+      </class> <!-- automation.demo.tests.web.alza.shoppingcart.TC_03 -->
+      <class name="automation.demo.tests.web.alza.shoppingcart.TC_02">
+        <test-method signature="test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_02@49c386c8]" started-at="2022-07-12T09:56:01 SELČ" name="test" finished-at="2022-07-12T09:56:24 SELČ" duration-ms="23488" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[There were some exceptions found during the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: There were some exceptions found during the test
+at automation.demo.driver.driver.DriverManager.<init>(DriverManager.java:21)
+at automation.demo.driver.driver.web.WebDriver.<init>(WebDriver.java:19)
+at automation.demo.driver.driver.web.Chrome.<init>(Chrome.java:8)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+at automation.demo.tests.web.alza.shoppingcart.TC_02.test(TC_02.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Suppressed: java.lang.RuntimeException: Expected [count|price] : [1|26590,000000]. Received : [1|18990,000000]
+at automation.demo.objects.web.alza.components.buttons.ShoppingCartButton.checkValues(ShoppingCartButton.java:39)
+at automation.demo.objects.web.alza.page_sections.HeaderPageSection.checkShoppingCartButtonValues(HeaderPageSection.java:50)
+at automation.demo.objects.web.alza.CategoryPage.checkShoppingCartButtonValues(CategoryPage.java:53)
+at automation.demo.tests.web.alza.shoppingcart.TC_02.test(TC_02.java:34)
+... 13 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="reset()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_02@49c386c8]" started-at="2022-07-12T09:56:25 SELČ" name="reset" finished-at="2022-07-12T09:56:26 SELČ" duration-ms="883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset -->
+      </class> <!-- automation.demo.tests.web.alza.shoppingcart.TC_02 -->
+      <class name="automation.demo.tests.web.alza.shoppingcart.TC_01">
+        <test-method signature="test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_01@670002]" started-at="2022-07-12T09:55:13 SELČ" name="test" finished-at="2022-07-12T09:55:30 SELČ" duration-ms="16796" status="PASS">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[There were some exceptions found during the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: There were some exceptions found during the test
+at automation.demo.driver.driver.DriverManager.<init>(DriverManager.java:21)
+at automation.demo.driver.driver.web.WebDriver.<init>(WebDriver.java:19)
+at automation.demo.driver.driver.web.Chrome.<init>(Chrome.java:8)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+at automation.demo.tests.web.alza.shoppingcart.TC_01.test(TC_01.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="reset()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_01@670002]" started-at="2022-07-12T09:55:30 SELČ" name="reset" finished-at="2022-07-12T09:55:31 SELČ" duration-ms="942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset -->
+      </class> <!-- automation.demo.tests.web.alza.shoppingcart.TC_01 -->
+      <class name="automation.demo.tests.web.alza.login.TC_04">
+        <test-method signature="test()[pri:0, instance:automation.demo.tests.web.alza.login.TC_04@778d1062]" started-at="2022-07-12T09:54:50 SELČ" name="test" finished-at="2022-07-12T09:55:13 SELČ" duration-ms="22722" status="PASS">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[There were some exceptions found during the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: There were some exceptions found during the test
+at automation.demo.driver.driver.DriverManager.<init>(DriverManager.java:21)
+at automation.demo.driver.driver.web.WebDriver.<init>(WebDriver.java:19)
+at automation.demo.driver.driver.web.Chrome.<init>(Chrome.java:8)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+at automation.demo.tests.web.alza.login.TC_04.test(TC_04.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="reset()[pri:0, instance:automation.demo.tests.web.alza.login.TC_04@778d1062]" started-at="2022-07-12T09:55:13 SELČ" name="reset" finished-at="2022-07-12T09:55:13 SELČ" duration-ms="792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset -->
+        <test-method is-config="true" signature="resetAll()[pri:0, instance:automation.demo.tests.web.alza.login.TC_04@778d1062]" started-at="2022-07-12T09:56:54 SELČ" name="resetAll" finished-at="2022-07-12T09:56:54 SELČ" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAll -->
+      </class> <!-- automation.demo.tests.web.alza.login.TC_04 -->
+      <class name="automation.demo.tests.web.alza.shoppingcart.TC_01b">
+        <test-method signature="test()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_01b@1f0f1111]" started-at="2022-07-12T09:55:31 SELČ" name="test" finished-at="2022-07-12T09:55:58 SELČ" duration-ms="26409" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[There were some exceptions found during the test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: There were some exceptions found during the test
+at automation.demo.driver.driver.DriverManager.<init>(DriverManager.java:21)
+at automation.demo.driver.driver.web.WebDriver.<init>(WebDriver.java:19)
+at automation.demo.driver.driver.web.Chrome.<init>(Chrome.java:8)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+at automation.demo.tests.web.alza.shoppingcart.TC_01b.test(TC_01b.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Suppressed: java.lang.RuntimeException: Shopping cart is not empty
+at automation.demo.objects.web.alza.pages.ShoppingCartPage.assertEmptyShoppingCart(ShoppingCartPage.java:41)
+at automation.demo.tests.web.alza.shoppingcart.TC_01b.test(TC_01b.java:35)
+... 13 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="reset()[pri:0, instance:automation.demo.tests.web.alza.shoppingcart.TC_01b@1f0f1111]" started-at="2022-07-12T09:56:00 SELČ" name="reset" finished-at="2022-07-12T09:56:01 SELČ" duration-ms="899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset -->
+      </class> <!-- automation.demo.tests.web.alza.shoppingcart.TC_01b -->
+    </test> <!-- All tests -->
+  </suite> <!-- Parallel Suite -->
+</testng-results>

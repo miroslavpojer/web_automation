@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Parallel Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" parallel="classes" name="All tests(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="alternative"/>
+        <include name="negative"/>
+        <include name="ui"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="automation.demo.tests.web.alza.shoppingcart.TC_02">
+        <methods>
+          <include name="reset"/>
+          <include name="resetAll"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- automation.demo.tests.web.alza.shoppingcart.TC_02 -->
+      <class name="automation.demo.tests.web.alza.shoppingcart.TC_01b">
+        <methods>
+          <include name="reset"/>
+          <include name="resetAll"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- automation.demo.tests.web.alza.shoppingcart.TC_01b -->
+      <class name="automation.demo.tests.web.alza.shoppingcart.TC_03">
+        <methods>
+          <include name="reset"/>
+          <include name="test"/>
+          <include name="resetAll"/>
+        </methods>
+      </class> <!-- automation.demo.tests.web.alza.shoppingcart.TC_03 -->
+    </classes>
+  </test> <!-- All tests(failed) -->
+</suite> <!-- Failed suite [Parallel Suite] -->

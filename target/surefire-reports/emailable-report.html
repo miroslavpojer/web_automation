@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Parallel Suite</th></tr>
+<tr><td><a href="#t0">All tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">124 514</td><td>negative, ui, smoke, alternative</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">automation.demo.tests.web.alza.shoppingcart.TC_01b</td><td><a href="#m0">test</a></td><td rowspan="1">1657612531607</td><td rowspan="1">26409</td></tr><tr class="failedodd"><td rowspan="1">automation.demo.tests.web.alza.shoppingcart.TC_02</td><td><a href="#m1">test</a></td><td rowspan="1">1657612561257</td><td rowspan="1">23488</td></tr><tr class="failedeven"><td rowspan="1">automation.demo.tests.web.alza.shoppingcart.TC_03</td><td><a href="#m2">test</a></td><td rowspan="1">1657612586750</td><td rowspan="1">22574</td></tr><tr><th colspan="4">All tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">automation.demo.tests.web.alza.login.TC_04</td><td><a href="#m3">test</a></td><td rowspan="1">1657612490352</td><td rowspan="1">22722</td></tr><tr class="passedodd"><td rowspan="1">automation.demo.tests.web.alza.shoppingcart.TC_01</td><td><a href="#m4">test</a></td><td rowspan="1">1657612513869</td><td rowspan="1">16796</td></tr></tbody>
+</table>
+<h2>All tests</h2><h3 id="m0">automation.demo.tests.web.alza.shoppingcart.TC_01b#test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.&lt;init&gt;(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.&lt;init&gt;(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.&lt;init&gt;(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_01b.test(TC_01b.java:17)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.lang.RuntimeException: Shopping cart is not empty
+		at automation.demo.objects.web.alza.pages.ShoppingCartPage.assertEmptyShoppingCart(ShoppingCartPage.java:41)
+		at automation.demo.tests.web.alza.shoppingcart.TC_01b.test(TC_01b.java:35)
+		... 13 more
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">automation.demo.tests.web.alza.shoppingcart.TC_02#test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.&lt;init&gt;(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.&lt;init&gt;(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.&lt;init&gt;(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_02.test(TC_02.java:18)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: java.lang.RuntimeException: Expected [count|price] : [1|26590,000000]. Received : [1|18990,000000]
+		at automation.demo.objects.web.alza.components.buttons.ShoppingCartButton.checkValues(ShoppingCartButton.java:39)
+		at automation.demo.objects.web.alza.page_sections.HeaderPageSection.checkShoppingCartButtonValues(HeaderPageSection.java:50)
+		at automation.demo.objects.web.alza.CategoryPage.checkShoppingCartButtonValues(CategoryPage.java:53)
+		at automation.demo.tests.web.alza.shoppingcart.TC_02.test(TC_02.java:34)
+		... 13 more
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">automation.demo.tests.web.alza.shoppingcart.TC_03#test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.&lt;init&gt;(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.&lt;init&gt;(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.&lt;init&gt;(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_03.test(TC_03.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	Suppressed: org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;DESKTOP-I9ETKPH&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d3a51f0bd3417aa5b9cb53c6a11f9f86, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\miros\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64216/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d3a51f0bd3417aa5b9cb53c6a11f9f86
+		at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+		at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+		at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+		at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:372)
+		at automation.demo.driver.driver.DriverManager.takeScreenshot(DriverManager.java:59)
+		at automation.demo.driver.listeners.WebTestListener.onTestFailure(WebTestListener.java:16)
+		... 9 more
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">automation.demo.tests.web.alza.login.TC_04#test</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.&lt;init&gt;(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.&lt;init&gt;(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.&lt;init&gt;(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.login.TC_04.test(TC_04.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">automation.demo.tests.web.alza.shoppingcart.TC_01#test</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: There were some exceptions found during the test
+	at automation.demo.driver.driver.DriverManager.&lt;init&gt;(DriverManager.java:21)
+	at automation.demo.driver.driver.web.WebDriver.&lt;init&gt;(WebDriver.java:19)
+	at automation.demo.driver.driver.web.Chrome.&lt;init&gt;(Chrome.java:8)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:66)
+	at automation.demo.driver.Configuration$Browser$1.init(Configuration.java:1)
+	at automation.demo.driver.driver.web.WebSession.initDriver(WebSession.java:8)
+	at automation.demo.WebTest.getWebDriver(WebTest.java:29)
+	at automation.demo.tests.web.alza.shoppingcart.TC_01.test(TC_01.java:17)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

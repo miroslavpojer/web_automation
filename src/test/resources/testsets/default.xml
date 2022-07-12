@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Suite" thread-count="1" parallel="classes">
+    <!-- run all test categories except performance -->
+    <groups>
+        <run>
+            <include name="smoke"/>
+            <include name="alternative"/>
+            <include name="negative"/>
+            <include name="ui"/>
+        </run>
+    </groups>
+
+    <test name="All tests">
+        <!-- default -->
+        <packages>
+            <package name="automation.demo.tests.web.*"/>
+        </packages>
+    </test>
+</suite> 

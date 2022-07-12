@@ -1,0 +1,69 @@
+TC_01 : Empty Shopping Cart in first visit of website
+    tags: Smoke, Basket
+    steps:
+        GIVEN The user sees website Home page
+        AND The all cookies are allowed.
+        AND The action dialog is not visible.
+        WHEN The user clicks on Shopping cart button
+        THEN The user sees Shopping Cart page
+        AND The Shopping cart is empty.
+
+TC_01b : Empty Shopping Cart in first visit of website (example of test failure with fake error)
+    tags: Smoke, Basket
+    steps:
+        GIVEN The user sees website Home page
+        AND The all cookies are allowed.
+        AND The action dialog is not visible.
+        WHEN The user clicks on Shopping cart button
+        THEN The user sees Cart page
+        AND The Shopping cart is empty.
+
+
+TC-02 : Add goods in to Shopping Cart
+    tags: Smoke, Basket
+    steps:
+        GIVEN The user sees website Home page
+        AND The all cookies are allowed.
+        AND The action dialog is not visible.
+        WHEN The user adds goods in to Shopping Cart
+        THEN The user sees Shopping cart button in not empty state
+        AND The Shopping Cart button shows total price of goods in Shopping Cart.
+
+
+TC-03 : Remove goods from Shopping Cart
+    tags: Smoke, Basket
+    steps:
+        GIVEN The user sees website Home page
+        AND The all cookies are allowed.
+        AND The action dialog is not visible.
+        WHEN The user adds goods in to Shopping Cart
+        AND The user opens the Shopping Cart
+        THEN The user sees one item in Shopping Cart
+        WHEN The user remove one item from SHopping Cart
+        THEN The user sees empty Shopping Cart
+
+
+TC-04 : Website Log In - wrong username
+    tags: Negative, Login
+    steps:
+        GIVEN The user sees website Home page
+        AND The all cookies are allowed.
+        AND The action dialog is not visible.
+        WHEN The user Logs in with wrong username and password
+        THEN The user sees error information on Log in button location
+
+
+TC-05 : Website Log In - forgot password
+    tags: Alternative, Login
+    steps:
+        GIVEN The user sees website Home page
+        AND The all cookies are allowed.
+        AND The action dialog is not visible.
+        WHEN The user navigates to Log in dialog
+        AND The user fills "test1@seznam.cz"
+        AND The user navigates to Forgotten password dialog
+        THEN The user see email input field with value "@"
+        WHEN The user fills email "test2@seznam.cz"
+        AND The user cancels Forgotten password dialog
+        THEN The user sees Login dialog
+        AND Email input field contains "test2@seznam.cz"
